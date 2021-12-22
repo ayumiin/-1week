@@ -54,11 +54,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\TitleScripts\SceneController.cs" />
-    <Compile Include="Assets\Saurabh_Studio\Ex Scene\CreateObj.cs" />
+    <Compile Include="Assets\CaharacterScripts\CharaSelect.cs" />
   </ItemGroup>
   <ItemGroup>
-     <None Include="Assets\20 Logos PSD\Fonts\chunkfiveex\SIL Open Font License 1.1.txt" />
-     <None Include="Assets\20 Logos PSD\Fonts\Read Me.txt" />
+     <None Include="Assets\UI\Dark_Brown_GUI_kit\Dark_Brown_GUI_kit.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.2.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
