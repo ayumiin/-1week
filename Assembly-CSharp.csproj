@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
+<<<<<<< HEAD
     <LangVersion>8.0</LangVersion>
+=======
+    <LangVersion>7.3</LangVersion>
+>>>>>>> f06ae810a8e70400f358e3904d120cbde72d3203
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +13,11 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
+<<<<<<< HEAD
     <ProjectGuid>{BBB36D49-94C3-698C-7104-5A499044E471}</ProjectGuid>
+=======
+    <ProjectGuid>{2B141FEF-1567-FC38-54B3-D1A6FBBD51B4}</ProjectGuid>
+>>>>>>> f06ae810a8e70400f358e3904d120cbde72d3203
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,6 +61,7 @@
     <UnityVersion>2020.2.7f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
@@ -70,6 +79,13 @@
   <ItemGroup>
      <None Include="Assets\Rin New 3d - Anime Style\Advance Unlit Shader\Advance Unlit.shader" />
      <None Include="Assets\Rin New 3d - Anime Style\ReadMe!.txt" />
+=======
+    <Compile Include="Assets\TitleScripts\SceneController.cs" />
+    <Compile Include="Assets\CaharacterScripts\CharaSelect.cs" />
+  </ItemGroup>
+  <ItemGroup>
+     <None Include="Assets\UI\Dark_Brown_GUI_kit\Dark_Brown_GUI_kit.txt" />
+>>>>>>> f06ae810a8e70400f358e3904d120cbde72d3203
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.2.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
