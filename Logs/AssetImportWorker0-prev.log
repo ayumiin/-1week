@@ -1,0 +1,906 @@
+Using pre-set license
+Built from '2020.2/staging' branch; Version is '2020.2.7f1 (c53830e277f1) revision 12924976'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19043.1415; Version 2009; 64bit' Language: 'ja' Physical Memory: 8109 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/mgczc/Desktop/Kakutou1Week
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+56861
+Successfully changed project path to: C:/Users/mgczc/Desktop/Kakutou1Week
+C:/Users/mgczc/Desktop/Kakutou1Week
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 40.03 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.7f1 (c53830e277f1)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/mgczc/Desktop/Kakutou1Week/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 620 (ID=0x5916)
+    Vendor:   
+    VRAM:     4054 MB
+    Driver:   27.20.100.8682
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56252
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007045 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 29.12 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  6.478 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006470 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.076 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1113 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 56.9 MB.
+System memory in use after: 57.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1555.
+Total: 2.109400 ms (FindLiveObjects: 0.165000 ms CreateObjectMapping: 0.050600 ms MarkObjects: 1.791100 ms  DeleteObjects: 0.101200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-UltraLight.otf
+  artifactKey: Guid(fb5b99b77d3832747a5b324d33255996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-UltraLight.otf using Guid(fb5b99b77d3832747a5b324d33255996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70057cd6ebf5f03ae4fef20de0f7f889') in 0.252143 seconds
+  Import took 0.255049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000643 seconds.
+  path: Assets/20 Logos PSD/Fonts/peacesans/Peace Sans.otf
+  artifactKey: Guid(88ea75a9053f106459a11a24e6d30129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/peacesans/Peace Sans.otf using Guid(88ea75a9053f106459a11a24e6d30129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e042e3e10f8df1e078f7fa97df0ef4b1') in 0.038862 seconds
+  Import took 0.049475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/20 Logos PSD/Fonts/foo/foo.ttf
+  artifactKey: Guid(da7bcbdc7c217d744b0b7639bf742831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/foo/foo.ttf using Guid(da7bcbdc7c217d744b0b7639bf742831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b0f8c9ed005c0a90e415b85083b32a3') in 0.054609 seconds
+  Import took 0.066587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000503 seconds.
+  path: Assets/20 Logos PSD/Fonts/molot/molot.regular.otf
+  artifactKey: Guid(43b35623d2933d6439c69fbb690a9f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/molot/molot.regular.otf using Guid(43b35623d2933d6439c69fbb690a9f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e60e0178f6af33fe105afa2b6a7996aa') in 0.055626 seconds
+  Import took 0.063234 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001739 seconds.
+  path: Assets/20 Logos PSD/Fonts/kaushanscript/KaushanScript-Regular.otf
+  artifactKey: Guid(f7508c2b80305714d907f17b4684eb42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/kaushanscript/KaushanScript-Regular.otf using Guid(f7508c2b80305714d907f17b4684eb42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2fa1d2ab16b5cabe818d8e3f3af89ce') in 0.065111 seconds
+  Import took 0.073329 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001302 seconds.
+  path: Assets/20 Logos PSD/Fonts/peacesans/Peace Sans Webfont.ttf
+  artifactKey: Guid(f5e7dee13b48c5644b6fe87cb6185509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/peacesans/Peace Sans Webfont.ttf using Guid(f5e7dee13b48c5644b6fe87cb6185509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52f1469f498bef706f3e970103ecdca0') in 0.061092 seconds
+  Import took 0.075509 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-UltraLightItalic.otf
+  artifactKey: Guid(4a278300834fbdc47a10e1eb508225f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-UltraLightItalic.otf using Guid(4a278300834fbdc47a10e1eb508225f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc149215e29174500ca14bc86f3a7e72') in 0.054526 seconds
+  Import took 0.061069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001442 seconds.
+  path: Assets/20 Logos PSD/Fonts/gilam/Gilam-BlackDEMO.otf
+  artifactKey: Guid(eebe1b5c7ff612f4bb4b6b9602c632f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/gilam/Gilam-BlackDEMO.otf using Guid(eebe1b5c7ff612f4bb4b6b9602c632f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbc7dd59cb8749f79b13eb47073ec544') in 0.051314 seconds
+  Import took 0.060317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/20 Logos PSD/Fonts/gilam/Gilam-ThinItalicDEMO.otf
+  artifactKey: Guid(6ace2bbc3eb00bf4890451d4fff0e470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/gilam/Gilam-ThinItalicDEMO.otf using Guid(6ace2bbc3eb00bf4890451d4fff0e470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f38dab5859b4af72c584406391c26d26') in 0.053781 seconds
+  Import took 0.062871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 76.360372 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Ultra.otf
+  artifactKey: Guid(6c3b13f86c2dea542b7c8952c6c28746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Ultra.otf using Guid(6c3b13f86c2dea542b7c8952c6c28746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b33a43ed04e381ebc3956408aade4479') in 0.246618 seconds
+  Import took 0.251723 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-UltraItalic.otf
+  artifactKey: Guid(c2e0e2bcb7878224e8bb2dc97883037d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-UltraItalic.otf using Guid(c2e0e2bcb7878224e8bb2dc97883037d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a543188890b69268196f89952a13689') in 0.034521 seconds
+  Import took 0.040691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.623379 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Two.otf
+  artifactKey: Guid(af8d5d4dff2042a4ca6523dca63aa848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Two.otf using Guid(af8d5d4dff2042a4ca6523dca63aa848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b337b8e067ed527b8be864eca6a8d2bd') in 0.092581 seconds
+  Import took 0.096391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000451 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-ThinItalic.otf
+  artifactKey: Guid(14eeb8134d2dc894e8c894228fbe44d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-ThinItalic.otf using Guid(14eeb8134d2dc894e8c894228fbe44d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae60639366bc6cd79ed738baf2ac5e9e') in 0.193736 seconds
+  Import took 0.206001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-TwoItalic.otf
+  artifactKey: Guid(4b574b87a5a13fa4cacc29b1d7aa25fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-TwoItalic.otf using Guid(4b574b87a5a13fa4cacc29b1d7aa25fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2389ac51c03ae6ba39a12b0d17c8a744') in 0.137085 seconds
+  Import took 0.148386 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Thin.otf
+  artifactKey: Guid(4b1da26bdf7b5134eb11077a4d82bad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Thin.otf using Guid(4b1da26bdf7b5134eb11077a4d82bad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fd190dba5b2f0a1392281ddf59fd424') in 0.034837 seconds
+  Import took 0.038449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.569980 seconds.
+  path: Assets/20 Logos PSD/Read me.docx
+  artifactKey: Guid(50aea0babbe488041beede97e877beef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Read me.docx using Guid(50aea0babbe488041beede97e877beef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bd2da674e1070f4cd7dc2b9d89dc057') in 0.044690 seconds
+  Import took 0.054196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.785341 seconds.
+  path: Assets/20 Logos PSD/Fonts/gilam/EULA Free Font License Ver. 2.0.pdf
+  artifactKey: Guid(ab217d07e2fc8194cbd329329131539d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/gilam/EULA Free Font License Ver. 2.0.pdf using Guid(ab217d07e2fc8194cbd329329131539d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd65ddb8fe3ae404373c5eabcc2bfecfa') in 0.042225 seconds
+  Import took 0.052072 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.915796 seconds.
+  path: Assets/20 Logos PSD/PNG/Title 1.png
+  artifactKey: Guid(4b91ec5e12c293a4f9fef25137e7ea69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/PNG/Title 1.png using Guid(4b91ec5e12c293a4f9fef25137e7ea69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eab26a22a5c5c93ce452d37a19a8bb6') in 0.096927 seconds
+  Import took 0.103249 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.245929 seconds.
+  path: Assets/20 Logos PSD
+  artifactKey: Guid(33d2b9e85906ce547ad748790e9e4d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD using Guid(33d2b9e85906ce547ad748790e9e4d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e73a72ad07f83623308a48865bbbfec0') in 0.029364 seconds
+  Import took 0.053277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 523.308447 seconds.
+  path: Assets/Image
+  artifactKey: Guid(24cda98dcd6abaa4895b469212ec3930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image using Guid(24cda98dcd6abaa4895b469212ec3930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab1e4d6dda4496035a931124866e48d6') in 0.029460 seconds
+  Import took 0.033937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.706918 seconds.
+  path: Assets/Image/cooltext400630993739059.png
+  artifactKey: Guid(276957c040ebe5349b01aecbb7243b8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/cooltext400630993739059.png using Guid(276957c040ebe5349b01aecbb7243b8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb4e2a1bf7a37f9b28ca911f7ed11900') in 0.073368 seconds
+  Import took 0.083284 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 585.412795 seconds.
+  path: Assets/Image/cooltext400630993739059.png
+  artifactKey: Guid(276957c040ebe5349b01aecbb7243b8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/cooltext400630993739059.png using Guid(276957c040ebe5349b01aecbb7243b8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3152605c5ed310fa3de84b6ac23a10f7') in 0.061515 seconds
+  Import took 0.066270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 440.362064 seconds.
+  path: Assets/Image/SceneManager.cs
+  artifactKey: Guid(4ea468c13d8060649861385fa9628880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/SceneManager.cs using Guid(4ea468c13d8060649861385fa9628880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d00a724150a0d132dfa73e20622d5c9') in 0.299598 seconds
+  Import took 0.306239 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003667 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.123 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1109 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.5 MB.
+System memory in use after: 60.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1608.
+Total: 2.625000 ms (FindLiveObjects: 0.183900 ms CreateObjectMapping: 0.073200 ms MarkObjects: 2.279600 ms  DeleteObjects: 0.086000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001291 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.185 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1109 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.5 MB.
+System memory in use after: 60.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1611.
+Total: 2.081200 ms (FindLiveObjects: 0.157800 ms CreateObjectMapping: 0.062200 ms MarkObjects: 1.790000 ms  DeleteObjects: 0.069300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.510684 seconds.
+  path: Assets/TitleScripts
+  artifactKey: Guid(87e44771bb680f54b8dd844589780e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TitleScripts using Guid(87e44771bb680f54b8dd844589780e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '482e4067b0b444199c1453ebbf4db780') in 0.031075 seconds
+  Import took 0.035740 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001203 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.443 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1109 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.5 MB.
+System memory in use after: 60.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1614.
+Total: 2.286900 ms (FindLiveObjects: 0.168400 ms CreateObjectMapping: 0.048200 ms MarkObjects: 1.989600 ms  DeleteObjects: 0.079400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 38606.893763 seconds.
+  path: Assets/Image/cooltext400660507917765.png
+  artifactKey: Guid(589bae46666f81b459dd74a01b2eb67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/cooltext400660507917765.png using Guid(589bae46666f81b459dd74a01b2eb67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '222a371b727733ed5fb83efd7737de07') in 0.468654 seconds
+  Import took 0.557906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.778202 seconds.
+  path: Assets/cooltext400660507917765.png
+  artifactKey: Guid(d84b48cccdfb2064ba28fe0b6bb229d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/cooltext400660507917765.png using Guid(d84b48cccdfb2064ba28fe0b6bb229d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b2486fc45e32f3ff3535559fe5c3d92') in 0.068361 seconds
+  Import took 0.091761 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.550722 seconds.
+  path: Assets/Image/cooltext400660507917765.png
+  artifactKey: Guid(589bae46666f81b459dd74a01b2eb67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/cooltext400660507917765.png using Guid(589bae46666f81b459dd74a01b2eb67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c16fa2addc88e7f4965ebb483da16a68') in 0.069568 seconds
+  Import took 0.073383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 171.252491 seconds.
+  path: Assets/cooltext400660593153263.png
+  artifactKey: Guid(d7b8d9b274298b74a94160a4868c3e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/cooltext400660593153263.png using Guid(d7b8d9b274298b74a94160a4868c3e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3337f6bfebf5ce7cdd4dd16a84485e4') in 0.035880 seconds
+  Import took 0.041185 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.391303 seconds.
+  path: Assets/cooltext400660593153263.png
+  artifactKey: Guid(d7b8d9b274298b74a94160a4868c3e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/cooltext400660593153263.png using Guid(d7b8d9b274298b74a94160a4868c3e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02f6c6ebc8f0a02476631308c359e978') in 0.046690 seconds
+  Import took 0.051824 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009593 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.376 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1109 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.5 MB.
+System memory in use after: 60.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1623.
+Total: 3.369800 ms (FindLiveObjects: 0.371500 ms CreateObjectMapping: 0.104600 ms MarkObjects: 2.803000 ms  DeleteObjects: 0.088100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001031 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.251 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1109 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.5 MB.
+System memory in use after: 60.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1626.
+Total: 2.257300 ms (FindLiveObjects: 0.272100 ms CreateObjectMapping: 0.073400 ms MarkObjects: 1.845800 ms  DeleteObjects: 0.063400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002000 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.976 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.6 MB.
+System memory in use after: 60.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1630.
+Total: 3.262300 ms (FindLiveObjects: 0.225000 ms CreateObjectMapping: 0.041700 ms MarkObjects: 2.928300 ms  DeleteObjects: 0.065400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1462.640613 seconds.
+  path: Assets/20 Logos PSD/PNG/Title 2.png
+  artifactKey: Guid(1568b3ca93d78de43a2b9a9ccca8861f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/PNG/Title 2.png using Guid(1568b3ca93d78de43a2b9a9ccca8861f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3d027f53a5aa66364dcaa4f2775e8fa') in 0.152580 seconds
+  Import took 0.158198 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.515608 seconds.
+  path: Assets/20 Logos PSD/PNG/Title 5.png
+  artifactKey: Guid(19c1fbf87da6ee94583dd8f56095f73a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/PNG/Title 5.png using Guid(19c1fbf87da6ee94583dd8f56095f73a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfe725e93ddfc5aa219a206ca54cb4b0') in 0.366201 seconds
+  Import took 0.434408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.618976 seconds.
+  path: Assets/20 Logos PSD/PSD/Title 4.psd
+  artifactKey: Guid(9c0071ae1410ad949a09a6f1031e26c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/PSD/Title 4.psd using Guid(9c0071ae1410ad949a09a6f1031e26c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5371485f67539d74a32ed78e5c436b63') in 1.081378 seconds
+  Import took 1.085433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.654620 seconds.
+  path: Assets/20 Logos PSD/PSD
+  artifactKey: Guid(7ab9930cf73d5b24f87d7273a0fd0e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/PSD using Guid(7ab9930cf73d5b24f87d7273a0fd0e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deeb7a6b76f3d6a81973bb1e9c057b5a') in 0.013840 seconds
+  Import took 0.018659 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001951 seconds.
+  path: Assets/20 Logos PSD/PSD
+  artifactKey: Guid(7ab9930cf73d5b24f87d7273a0fd0e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/PSD using Guid(7ab9930cf73d5b24f87d7273a0fd0e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deeb7a6b76f3d6a81973bb1e9c057b5a') in 0.014701 seconds
+  Import took 0.023574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.040563 seconds.
+  path: Assets/20 Logos PSD/PNG
+  artifactKey: Guid(6e3ca3e4f6d77ad468764915ee01341a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/PNG using Guid(6e3ca3e4f6d77ad468764915ee01341a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8c4558b804b271f1d5e04f6c2ce1510') in 0.013207 seconds
+  Import took 0.016180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 111.238845 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-SemiBold.otf
+  artifactKey: Guid(0572b090b5023c746a36c2965c65049c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-SemiBold.otf using Guid(0572b090b5023c746a36c2965c65049c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87aea4b57cb16010e19703eb423b0ae7') in 0.132645 seconds
+  Import took 0.136078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-SemiBoldItalic.otf
+  artifactKey: Guid(878244940dd659f44839fbea3e15b2da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-SemiBoldItalic.otf using Guid(878244940dd659f44839fbea3e15b2da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fcccc47a00cb8ec60bc60ca53ab9379') in 0.037139 seconds
+  Import took 0.043149 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Medium.otf
+  artifactKey: Guid(b19db096884ed2344aa9e8fd25182e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Medium.otf using Guid(b19db096884ed2344aa9e8fd25182e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c86a3c08bebc9ce69047eb81c733da3') in 0.053382 seconds
+  Import took 0.059425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000883 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Italic.otf
+  artifactKey: Guid(4ec76f95b44477b44898525f65a8d9f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Italic.otf using Guid(4ec76f95b44477b44898525f65a8d9f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b2a6974bf4317618f6633d3ae4e1af3') in 0.041303 seconds
+  Import took 0.046464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-MediumItalic.otf
+  artifactKey: Guid(7f3e40f973be9d440a6350b335c22413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-MediumItalic.otf using Guid(7f3e40f973be9d440a6350b335c22413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f15a09e954a968c26dd8ac423e5f1764') in 0.041190 seconds
+  Import took 0.049648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-HeavyItalic.otf
+  artifactKey: Guid(fc3a8e93767516749a6de60f64230a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-HeavyItalic.otf using Guid(fc3a8e93767516749a6de60f64230a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83ace4b99bdb12bab3bb568857b85fe4') in 0.102301 seconds
+  Import took 0.108690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Hair.otf
+  artifactKey: Guid(187a66d7b5cc6ec4f876a254b1ac3027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Hair.otf using Guid(187a66d7b5cc6ec4f876a254b1ac3027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e78939b86020540976708bf3cb6f3950') in 0.041062 seconds
+  Import took 0.048919 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004130 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-HairItalic.otf
+  artifactKey: Guid(1afb78f05da5e3c49a1143e721c74a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-HairItalic.otf using Guid(1afb78f05da5e3c49a1143e721c74a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f075445060972fec2da0730a4057ab0d') in 0.052047 seconds
+  Import took 0.101260 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-LightItalic.otf
+  artifactKey: Guid(2688a8cf4377174468983905fdd9a22d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-LightItalic.otf using Guid(2688a8cf4377174468983905fdd9a22d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '837a56d02968614df1bb0f9d901fc9da') in 0.043465 seconds
+  Import took 0.048042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001137 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Heavy.otf
+  artifactKey: Guid(ebc3770a1de54774fb790a43a8975fe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Heavy.otf using Guid(ebc3770a1de54774fb790a43a8975fe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9355ca075c52719237d800af9fff741c') in 0.041823 seconds
+  Import took 0.049436 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Regular.otf
+  artifactKey: Guid(e693380601f2f364cbfe5e4415c3fd80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Regular.otf using Guid(e693380601f2f364cbfe5e4415c3fd80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '760953537206eb967ad775dfd0cca14e') in 0.055056 seconds
+  Import took 0.072399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000998 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Light.otf
+  artifactKey: Guid(19141cee87d28c4428ed0ac2b1748a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Light.otf using Guid(19141cee87d28c4428ed0ac2b1748a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36a693728370c297dcaab4536d602ad8') in 0.050214 seconds
+  Import took 0.054960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.102108 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Book.otf
+  artifactKey: Guid(7828a4090a5ca0946b4d0cae809cbbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Book.otf using Guid(7828a4090a5ca0946b4d0cae809cbbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45e70cb8f96d13653a11cdf5d2fec772') in 0.035106 seconds
+  Import took 0.040838 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-BookItalic.otf
+  artifactKey: Guid(a3983d1a4d2d3ba4db84d9f1f7623cf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-BookItalic.otf using Guid(a3983d1a4d2d3ba4db84d9f1f7623cf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7fe7db5223997bfd4923716fff1e373') in 0.035170 seconds
+  Import took 0.038529 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000597 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-EightItalic.otf
+  artifactKey: Guid(f22f4eeaa21d3844ca3d0f2d42f2e66e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-EightItalic.otf using Guid(f22f4eeaa21d3844ca3d0f2d42f2e66e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ffeec495a143b27cacf6c74564ef3fb') in 0.050532 seconds
+  Import took 0.057434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-BookItalic.otf
+  artifactKey: Guid(a3983d1a4d2d3ba4db84d9f1f7623cf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-BookItalic.otf using Guid(a3983d1a4d2d3ba4db84d9f1f7623cf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7fe7db5223997bfd4923716fff1e373') in 0.022610 seconds
+  Import took 0.026218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000878 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Four.otf
+  artifactKey: Guid(a783f8a04c200c148992a27ab2f5b20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Four.otf using Guid(a783f8a04c200c148992a27ab2f5b20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b26c087cacc3e628cf2c6e2a2e9934a') in 0.058888 seconds
+  Import took 0.067079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-BoldItalic.otf
+  artifactKey: Guid(a3ddf4a93dfeda345ac64ee939015f57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-BoldItalic.otf using Guid(a3ddf4a93dfeda345ac64ee939015f57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae5f7c71a775440554fe176ca599c8a1') in 0.136433 seconds
+  Import took 0.143221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Book.otf
+  artifactKey: Guid(7828a4090a5ca0946b4d0cae809cbbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Book.otf using Guid(7828a4090a5ca0946b4d0cae809cbbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45e70cb8f96d13653a11cdf5d2fec772') in 0.038255 seconds
+  Import took 0.052417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000436 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-ExtraBold.otf
+  artifactKey: Guid(053bb247f3eafa049ab4c68bf211e0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-ExtraBold.otf using Guid(053bb247f3eafa049ab4c68bf211e0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa2dcc2b89b790822759cfe916020a27') in 0.090615 seconds
+  Import took 0.100541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-ExtraBoldItalic.otf
+  artifactKey: Guid(04f21b61e36a49341872bd00b5828ab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-ExtraBoldItalic.otf using Guid(04f21b61e36a49341872bd00b5828ab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79490f8c1f3f701556779e71b2491222') in 0.519619 seconds
+  Import took 0.657563 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000469 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Eight.otf
+  artifactKey: Guid(6b63fd82e47252a44b4c309ed0f0cf24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Eight.otf using Guid(6b63fd82e47252a44b4c309ed0f0cf24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7fe7d728cb2256045af51c2106e26d2') in 0.100573 seconds
+  Import took 0.105307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Bold.otf
+  artifactKey: Guid(95c315c3de0250444a80b0d0ce336e8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-Bold.otf using Guid(95c315c3de0250444a80b0d0ce336e8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc83f99f33b9f980746faf62526afa75') in 0.129071 seconds
+  Import took 0.147242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-ExtraLightItalic.otf
+  artifactKey: Guid(7fcd2b8d2ee03814e8fc918f172bfef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-ExtraLightItalic.otf using Guid(7fcd2b8d2ee03814e8fc918f172bfef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79d682adc2e5ad70ec97b759d7a8a20e') in 0.107860 seconds
+  Import took 0.118507 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000411 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-ExtraLight.otf
+  artifactKey: Guid(763d5a7548f0df34eb3535bf9675879c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-ExtraLight.otf using Guid(763d5a7548f0df34eb3535bf9675879c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edaaf52d4d48313157a03ecaaf4c2c96') in 0.076443 seconds
+  Import took 0.097397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/20 Logos PSD/Fonts/chunkfiveex/Chunkfive Ex.ttf
+  artifactKey: Guid(24bf2e415c90d3e46990a9fcf5ac8e04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/chunkfiveex/Chunkfive Ex.ttf using Guid(24bf2e415c90d3e46990a9fcf5ac8e04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a79a3f9ab83082159d0259d92a9265eb') in 0.063012 seconds
+  Import took 0.068038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-FourItalic.otf
+  artifactKey: Guid(5ffb9536e48da21498809b52b2afd86a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy/FiraSans-FourItalic.otf using Guid(5ffb9536e48da21498809b52b2afd86a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfeb7f93d7fa592b11e6415cc907a9ed') in 0.074236 seconds
+  Import took 0.085132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 69.610856 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy
+  artifactKey: Guid(70606eaa9ad6db744becac748946df13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy using Guid(70606eaa9ad6db744becac748946df13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f10fcf3595d2958408a468c02dbac2c') in 0.029948 seconds
+  Import took 0.047251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001533 seconds.
+  path: Assets/20 Logos PSD/Fonts/firasansheavy
+  artifactKey: Guid(70606eaa9ad6db744becac748946df13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/firasansheavy using Guid(70606eaa9ad6db744becac748946df13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f10fcf3595d2958408a468c02dbac2c') in 0.007445 seconds
+  Import took 0.014437 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.116730 seconds.
+  path: Assets/20 Logos PSD/Fonts/kaushanscript
+  artifactKey: Guid(aac7c063422989e46af0262bec60c232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/kaushanscript using Guid(aac7c063422989e46af0262bec60c232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d2cd386e41d850d685e7b8ccfc0c3ce') in 0.023772 seconds
+  Import took 0.033611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001586 seconds.
+  path: Assets/20 Logos PSD/Fonts/kaushanscript
+  artifactKey: Guid(aac7c063422989e46af0262bec60c232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/kaushanscript using Guid(aac7c063422989e46af0262bec60c232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d2cd386e41d850d685e7b8ccfc0c3ce') in 0.030345 seconds
+  Import took 0.038692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.069387 seconds.
+  path: Assets/20 Logos PSD/Fonts/molot
+  artifactKey: Guid(3c543391cb1426a4582b4c10da9563df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/molot using Guid(3c543391cb1426a4582b4c10da9563df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1203f4d39b0508617fdc05b85d62d75b') in 0.020680 seconds
+  Import took 0.025081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000552 seconds.
+  path: Assets/20 Logos PSD/Fonts/molot
+  artifactKey: Guid(3c543391cb1426a4582b4c10da9563df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/molot using Guid(3c543391cb1426a4582b4c10da9563df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1203f4d39b0508617fdc05b85d62d75b') in 0.006648 seconds
+  Import took 0.013242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.162486 seconds.
+  path: Assets/20 Logos PSD/Fonts/peacesans
+  artifactKey: Guid(42674ecab1b7aac4786c4f0c99ec6882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/peacesans using Guid(42674ecab1b7aac4786c4f0c99ec6882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6865f6387a928e3940f2f0d3b82c8f74') in 0.024667 seconds
+  Import took 0.033418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001623 seconds.
+  path: Assets/20 Logos PSD/Fonts/peacesans
+  artifactKey: Guid(42674ecab1b7aac4786c4f0c99ec6882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/20 Logos PSD/Fonts/peacesans using Guid(42674ecab1b7aac4786c4f0c99ec6882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6865f6387a928e3940f2f0d3b82c8f74') in 0.014596 seconds
+  Import took 0.020866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30889.762566 seconds.
+  path: Assets/Image/22358567.jpg
+  artifactKey: Guid(ac3274b2e430ca54191baf64b24705c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/22358567.jpg using Guid(ac3274b2e430ca54191baf64b24705c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edcb05c356cdee9d7396d4fd03f940b8') in 0.642377 seconds
+  Import took 0.939610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 229.218895 seconds.
+  path: Assets/Image/23050965_m.jpg
+  artifactKey: Guid(b4bc69f004fb5c94184832cbe3de7ae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/23050965_m.jpg using Guid(b4bc69f004fb5c94184832cbe3de7ae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '851b03891254e3faa5df9ec5afbe1c76') in 0.059945 seconds
+  Import took 0.217365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.657840 seconds.
+  path: Assets/Image/23050965_m.jpg
+  artifactKey: Guid(b4bc69f004fb5c94184832cbe3de7ae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/23050965_m.jpg using Guid(b4bc69f004fb5c94184832cbe3de7ae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f8e4b0c517fc4fd2dcb80535def80ad') in 0.228097 seconds
+  Import took 0.237516 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006625 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.934 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.6 MB.
+System memory in use after: 60.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1637.
+Total: 2.639300 ms (FindLiveObjects: 0.264200 ms CreateObjectMapping: 0.067800 ms MarkObjects: 2.221800 ms  DeleteObjects: 0.083400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000927 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.401 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.6 MB.
+System memory in use after: 60.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1640.
+Total: 2.163600 ms (FindLiveObjects: 0.137500 ms CreateObjectMapping: 0.033600 ms MarkObjects: 1.928500 ms  DeleteObjects: 0.062300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 607.088926 seconds.
+  path: Assets/Image/535162.jpg
+  artifactKey: Guid(c88f42b1210539244a8f719c2141f3a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/535162.jpg using Guid(c88f42b1210539244a8f719c2141f3a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c02b86d302a7b727c87d9027fd9bf549') in 0.128902 seconds
+  Import took 0.134631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.451743 seconds.
+  path: Assets/Image/535162.jpg
+  artifactKey: Guid(c88f42b1210539244a8f719c2141f3a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/535162.jpg using Guid(c88f42b1210539244a8f719c2141f3a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45330f5615173e0be5e73aac52177162') in 0.082965 seconds
+  Import took 0.086567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.459052 seconds.
+  path: Assets/Image/22358567.jpg
+  artifactKey: Guid(ac3274b2e430ca54191baf64b24705c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/22358567.jpg using Guid(ac3274b2e430ca54191baf64b24705c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef5ad56f7a20041b13bae33c7ff34c3b') in 0.059462 seconds
+  Import took 0.064747 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 70.174547 seconds.
+  path: Assets/Image/2354320.jpg
+  artifactKey: Guid(7a64918c05733ba4e9389408a2a95b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/2354320.jpg using Guid(7a64918c05733ba4e9389408a2a95b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20c84057a10a84724ada2d6ffd6653bd') in 0.052661 seconds
+  Import took 0.077477 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000964 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.177 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.7 MB.
+System memory in use after: 60.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1648.
+Total: 1.981600 ms (FindLiveObjects: 0.171400 ms CreateObjectMapping: 0.047100 ms MarkObjects: 1.697900 ms  DeleteObjects: 0.063400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 328.415057 seconds.
+  path: Assets/CharaSelect.unity
+  artifactKey: Guid(6bfd8fea4a5c76a43b213d1c01ab93ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharaSelect.unity using Guid(6bfd8fea4a5c76a43b213d1c01ab93ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a50645d082a3345b0a2e41ae6d9bab71') in 0.115787 seconds
+  Import took 0.120802 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
