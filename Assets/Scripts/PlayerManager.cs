@@ -9,11 +9,12 @@ public class PlayerManager : MonoBehaviour
 
     //Playerのデータ
     public FighterModel model;
-    GameManager gameManager;
 
     //必殺技の実装
     public int number;
     public GameObject enemy;
+
+    //enemyの取得
     EnemyManager enemyManager;
 
     private void Awake()
@@ -25,9 +26,27 @@ public class PlayerManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //SetUp();
+        SetUp();
     }
-
+    //キャラクターのステータス取得
+    void SetUp()
+    {
+        switch (PlayerPrefs.GetInt("Data"))
+        {
+            case 0:
+                model = new FighterModel(0);
+                break;
+            case 1:
+                model = new FighterModel(1);
+                break;
+            case 2:
+                model = new FighterModel(2);
+                break;
+            case 3:
+                model = new FighterModel(3);
+                break;
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -36,52 +55,33 @@ public class PlayerManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.W))
         {
             pc.Punch();
+            enemyManager.FightGame();
         }
 
         if (Input.GetKeyDown(KeyCode.S))
         {
             pc.Kick();
+            enemyManager.FightGame();
         }
         if (number >= 5)
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
                 pc.SpecialAttack();
+                enemyManager.FightGame();
             }
         }
     }
     public void SpecialAttackCount()
     {
         number++;
-        Debug.Log(number);
     }
     public void EnemyHp()
     {
-        if (enemyManager.hp <= 0)
+        if (enemyManager.model.hp <= 0)
         {
             SpecialAttackCount();
         }
     }
-    /*
-    void SetUp()
-    {
-        switch (gameManager.GetNum())
-        {
-            case 0:
-                model = new FighterModel(gameManager.GetNum());
-                Debug.Log(model.moveJump);
-                break;
-            case 1:
-                model = new FighterModel(gameManager.GetNum());
-                break;
-            case 2:
-                model = new FighterModel(gameManager.GetNum());
-                break;
-            case 3:
-                model = new FighterModel(gameManager.GetNum());
-                break;
-        }
-    }
-    */
 
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FighterModel 
 {
+    public float hp;
     public float at;
     public float df;
     public float moveJump;
@@ -11,8 +12,9 @@ public class FighterModel
 
     public FighterModel(int fighterID)
     {
-        FighterEntity fighterEntity = Resources.Load<FighterEntity>("fighterEntity" + fighterID);
+        FighterEntity fighterEntity = Resources.Load<FighterEntity>("FighterEntity" + fighterID);
 
+        hp = fighterEntity.hp;
         at = fighterEntity.Attack;
         df = fighterEntity.Defence;
         moveJump = fighterEntity.MoveJump;
