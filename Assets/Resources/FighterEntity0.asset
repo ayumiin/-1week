@@ -15,5 +15,5 @@ MonoBehaviour:
   hp: 0
   Attack: 10
   Defence: 10
-  MoveJump: 6
+  MoveJump: 9
   MoveSpeed: 5

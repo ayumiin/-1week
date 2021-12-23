@@ -9,6 +9,7 @@ public class PlayerManager : MonoBehaviour
 
     //Playerのデータ
     public FighterModel model;
+    Animator animator;
 
     //必殺技の実装
     public int number;
@@ -21,6 +22,7 @@ public class PlayerManager : MonoBehaviour
     {
         enemyManager = enemy.GetComponent<EnemyManager>();
         pc = GetComponent<PlayerController>();
+        animator = GetComponent<Animator>();
         //gameManager = GameManager.instance;
     }
     // Start is called before the first frame update
@@ -78,7 +80,7 @@ public class PlayerManager : MonoBehaviour
     }
     public void EnemyHp()
     {
-        if (enemyManager.model.hp <= 0)
+        if (enemyManager.model.hp >= 5)
         {
             SpecialAttackCount();
         }

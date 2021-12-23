@@ -9,6 +9,8 @@ public class EnemyController : MonoBehaviour
 
     //data
     public FighterModel model;
+
+    public GameObject player;
     PlayerManager playerManager;
 
     //攻撃
@@ -27,7 +29,9 @@ public class EnemyController : MonoBehaviour
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         capsuleCollider = GetComponent<CapsuleCollider>();
-        playerManager = GetComponent<PlayerManager>();
+
+        player = GameObject.FindGameObjectWithTag("player");
+        playerManager = player.GetComponent<PlayerManager>();
     }
     // Start is called before the first frame update
     void Start()
@@ -58,7 +62,6 @@ public class EnemyController : MonoBehaviour
     public void moveBackward()
     {
         rb.velocity = new Vector3(0, 0, -2);
-        Debug.Log("back");
     }
     //攻撃（パンチ）
     public void Punch()
@@ -69,7 +72,7 @@ public class EnemyController : MonoBehaviour
             hitenemy.GetComponent<EnemyManager>().OnDamage();
             playerManager.EnemyHp();
         }
-        animator.SetTrigger("Punch");
+        animator.SetBool("Attack",true);
     }
     //攻撃（キック）
     public void Kick()

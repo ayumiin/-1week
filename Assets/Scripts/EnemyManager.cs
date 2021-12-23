@@ -36,6 +36,8 @@ public class EnemyManager : MonoBehaviour
                 case 3:
                     enemyController.moveBackward();
                     break;
+                case 4:
+                    return;
             }
             timer = 0;
         }
@@ -43,11 +45,13 @@ public class EnemyManager : MonoBehaviour
 
     public void OnDamage()
     {
+        Debug.Log("hit");
+
         hp = model.hp;
-        model.hp -= 1;
-        if(model.hp < 0)
+        hp += 1;
+        if(model.hp > 5)
         {
-            model.hp = 5;
+            hp = model.hp;
         }
     }
     public void FightGame()
@@ -70,7 +74,8 @@ public class EnemyManager : MonoBehaviour
             case 5:
                 enemyController.moveForward();
                 break;
-
+            case 6:
+                return;
         }
     }
 }
