@@ -62,7 +62,8 @@ public class PlayerController : MonoBehaviour
             hitenemy.GetComponent<EnemyManager>().OnDamage();
             playerManager.EnemyHp();
         }
-        animator.SetTrigger("Punch");
+        animator.SetBool("Attack", true);
+
     }
     //攻撃（キック）
     public void Kick()
@@ -73,6 +74,7 @@ public class PlayerController : MonoBehaviour
         {
             hitenemy.GetComponent<EnemyManager>().OnDamage();
             playerManager.EnemyHp();
+            Debug.Log("attack");
         }
 
         animator.SetTrigger("Kick");
