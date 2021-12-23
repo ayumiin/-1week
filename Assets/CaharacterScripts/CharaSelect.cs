@@ -9,35 +9,34 @@ public class CharaSelect : MonoBehaviour
     public Text selectText;
     public GameObject selectButton;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public int N;
 
     public void SelectImage(int number)
     {
-        switch(number)
+        N = number;
+        switch(N)
         {
             case 0 :
+                PlayerPrefs.SetInt("Data",N);
                 selectText.text = "1人目";
+                Debug.Log(N);
                 break;
 
             case 1:
+                PlayerPrefs.SetInt("Data", N);
+
                 selectText.text = "2人目";
                 break;
 
             case 2:
+                PlayerPrefs.SetInt("Data", N);
+
                 selectText.text = "3人目";
                 break;
 
             case 3:
+                PlayerPrefs.SetInt("Data", N);
+
                 selectText.text = "4人目";
                 break;
         }
