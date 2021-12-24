@@ -13,6 +13,9 @@ public class EnemyManager : MonoBehaviour
     private float timer;
     private float hp;
 
+    //ƒvƒŒƒCƒ„[‚Æ‚Ì‹——£
+    float distance;
+
     private void Awake()
     {
         enemyController = GetComponent<EnemyController>();
@@ -22,7 +25,26 @@ public class EnemyManager : MonoBehaviour
     private void Update()
     {
         timer += Time.deltaTime;
-        if (timer > 0.5)
+   
+        distance = Vector3.Distance(enemyController.player.transform.position, this.transform.position);
+        if (distance < 1.2)
+        {
+            enemyController.moveBackward();
+        }
+        else if (distance >= 5 && timer > 0.5)
+        {
+            moveNumber = Mathf.RoundToInt(Random.Range(1, 4));
+            switch (moveNumber)
+            {
+                case 1:
+                    enemyController.enemyJump();
+                    break;
+                case 2:
+                    enemyController.moveForward();
+                    break;
+            }
+        }
+        else if (timer > 0.5)
         {
             moveNumber = Mathf.RoundToInt(Random.Range(1, 4));
             switch (moveNumber)
