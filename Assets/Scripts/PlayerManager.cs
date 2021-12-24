@@ -18,6 +18,9 @@ public class PlayerManager : MonoBehaviour
     //enemy‚ÌŽæ“¾
     EnemyManager enemyManager;
 
+    //“G‚Æ‚Ì‹——£
+    public float distance;
+
     private void Awake()
     {
         enemyManager = enemy.GetComponent<EnemyManager>();
@@ -52,9 +55,11 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        pc.Movement();
+        distance = Vector3.Distance(this.transform.position, enemy.transform.position);
 
-        if(Input.GetKeyDown(KeyCode.W))
+        pc.Movement(1);
+
+        if (Input.GetKeyDown(KeyCode.W))
         {
             pc.Punch();
             enemyManager.FightGame();
@@ -73,6 +78,7 @@ public class PlayerManager : MonoBehaviour
                 enemyManager.FightGame();
             }
         }
+
     }
     public void SpecialAttackCount()
     {

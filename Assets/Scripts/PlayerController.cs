@@ -33,16 +33,23 @@ public class PlayerController : MonoBehaviour
         playerManager = GetComponent<PlayerManager>();
     }
     //jump,‰¡ˆÚ“®
-    public void Movement()
+    public void Movement(float z)
     {
-        float z = Input.GetAxis("Horizontal");
+        z = Input.GetAxis("Horizontal");
 
         if (characterController.isGrounded)
         {
-            //‰¡•ûŒü‚ÌˆÚ“®
-            moveDirection = new Vector3(0, 0, -z * playerManager.model.moveSpeed);
-            animator.SetFloat("speed", Mathf.Abs(z));
-
+            if (playerManager.distance < 1.2)
+            {
+                //‰¡•ûŒü‚ÌˆÚ“®
+                moveDirection = new Vector3(0, 0, Math.Abs(z) * playerManager.model.moveSpeed);
+                animator.SetFloat("speed", Mathf.Abs(z));
+            }
+            else
+            {
+                moveDirection = new Vector3(0, 0, -z * playerManager.model.moveSpeed);
+                animator.SetFloat("speed", Mathf.Abs(z));
+            }
             //jump
             if (Input.GetKeyDown(KeyCode.Space))
             {
