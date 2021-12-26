@@ -1,11 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-<<<<<<< HEAD
-    <LangVersion>7.3</LangVersion>
-=======
     <LangVersion>8.0</LangVersion>
->>>>>>> b239a6414cecdc292455e36030027c3ff80e88d1
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -322,22 +318,15 @@
     </Reference>
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.2.7f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
-<<<<<<< HEAD
-=======
     </Reference>
     <Reference Include="UnityEditor.WebGL.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.2.7f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
->>>>>>> b239a6414cecdc292455e36030027c3ff80e88d1
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.2.7f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
-<<<<<<< HEAD
-      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\15.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
-=======
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
->>>>>>> b239a6414cecdc292455e36030027c3ff80e88d1
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>

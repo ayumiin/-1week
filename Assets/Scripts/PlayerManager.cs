@@ -13,7 +13,8 @@ public class PlayerManager : MonoBehaviour
     Animator animator;
 
     //•KŽE‹Z‚ÌŽÀ‘•
-    public int number;
+    public int number = 0;
+    public bool isSpecialAttack;
 
     //“G‚Æ‚Ì‹——£
     public float distance;
@@ -93,21 +94,11 @@ public class PlayerManager : MonoBehaviour
                 pc.SpecialAttack();
                 gameManager.enemyManager.FightGame();
             }
-        }
-
-        
-
+        }     
     }
     public void SpecialAttackCount()
     {
         number++;
+        PlayerUI.instance.CountUp(number);
     }
-    public void EnemyHp()
-    {
-        if (gameManager.enemyManager.hitCount >= 5)
-        {
-            SpecialAttackCount();
-        }
-    }
-
 }

@@ -9,6 +9,8 @@ TagManager:
   - kickPoint
   - punchPoint
   - enemy
+  - EnemykickPoubt
+  - EnemypunchPoint
   layers:
   - Default
   - TransparentFX

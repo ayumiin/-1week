@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerController : MonoBehaviour
 {
@@ -27,6 +29,17 @@ public class PlayerController : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         capsuleCollider = GetComponent<CapsuleCollider>();
         playerManager = GetComponent<PlayerManager>();
+    }
+    private void Update()
+    {
+        if(GameManager.instance.enemyController.isOnHit)
+        {
+            StartCoroutine(OnHit());
+        }
+        else
+        {
+            return;
+        }
     }
     //jump,‰¡ˆÚ“®
     public void Movement(float z)
@@ -67,38 +80,59 @@ public class PlayerController : MonoBehaviour
     //UŒ‚iƒpƒ“ƒ`j
     public IEnumerator CoroutinePunch()
     {
-        Collider[] hitPunchEnemys = Physics.OverlapSphere(playerManager.punchPointTransform.position, playerManager.punchAttackRadius, enemyLayer);
-        animator.SetBool("Attack", true);
-        //0.2•b‘Ò‹@
-        yield return new WaitForSeconds(0.2f);
-        foreach (Collider hitenemy in hitPunchEnemys)
+        animator.SetTrigger("Attack");
+
+        if (Physics.OverlapSphere(playerManager.punchPointTransform.position, playerManager.punchAttackRadius, enemyLayer).Length > 0)
         {
-            hitenemy.GetComponent<EnemyManager>().OnDamage();
-            playerManager.EnemyHp();
+            GameManager.instance.enemyManager.OnDamage();
+
         }
+        else
+        {
+            yield break;
+        }
+        yield return new WaitForSeconds(0.2f);
     }
     //UŒ‚iƒLƒbƒNj
     public IEnumerator CoroutineKick()
     {
-        Collider[] hitKickEnemys = Physics.OverlapSphere(playerManager.kickPointTransform.position, playerManager.kickAttackRadius, enemyLayer);
         animator.SetTrigger("Kick");
-        //0.2•b‘Ò‹@
-        yield return new WaitForSeconds(0.2f);
-        foreach (Collider hitenemy in hitKickEnemys)
+
+        if (Physics.OverlapSphere(playerManager.kickPointTransform.position, playerManager.kickAttackRadius, enemyLayer).Length > 0)
         {
-            hitenemy.GetComponent<EnemyManager>().OnDamage();
-            playerManager.EnemyHp();
-            if (hitKickEnemys == null)
-            {
-                break;
-            }          
-            Debug.Log("attack");
+            GameManager.instance.enemyManager.OnDamage();
         }
+        else
+        {
+            yield break; 
+        }
+        yield return new WaitForSeconds(0.2f);
     }
     //•KE‹Z
     public void SpecialAttack()
     {
-        Collider[] hitEnemys = Physics.OverlapSphere(playerManager.punchPointTransform.position, playerManager.punchAttackRadius, enemyLayer);
         animator.SetTrigger("SpecialAttack");
+
+        if (Physics.OverlapSphere(playerManager.punchPointTransform.position, playerManager.punchAttackRadius, enemyLayer).Length > 0)
+        {
+            SceneManager.LoadScene("Result");
+        }
+        //•KEŠO‚·
+        else
+        {
+            playerManager.number = 0;
+            GameManager.instance.enemyManager.hitCount = 0;
+            PlayerUI.instance.CountUp(playerManager.number);
+        }
+    }
+    //UŒ‚‚ğó‚¯‚½‚Ìˆ—
+    public IEnumerator OnHit()
+    {
+        animator.SetTrigger("hit");
+        StopCoroutine(CoroutinePunch());
+        StopCoroutine(CoroutineKick());
+        yield return new WaitForSeconds(0.5f);
+
+        GameManager.instance.enemyController.isOnHit = false;
     }
 }
