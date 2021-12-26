@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    private GameManager gameManager;
     //当たり判定
     CapsuleCollider capsuleCollider;
 
     //data
     public FighterModel model;
-
-    public GameObject player;
-    PlayerManager playerManager;
 
     //攻撃
     public Transform punchPoint;
@@ -26,12 +24,13 @@ public class EnemyController : MonoBehaviour
     bool isGround = false;
     private void Awake()
     {
+        gameManager = GameManager.instance;
+        
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         capsuleCollider = GetComponent<CapsuleCollider>();
 
-        player = GameObject.FindGameObjectWithTag("player");
-        playerManager = player.GetComponent<PlayerManager>();
+        gameManager.FindPlayer();
     }
     // Start is called before the first frame update
     void Start()
@@ -70,19 +69,19 @@ public class EnemyController : MonoBehaviour
         foreach (Collider hitenemy in hitEnemys)
         {
             hitenemy.GetComponent<EnemyManager>().OnDamage();
-            playerManager.EnemyHp();
+            gameManager.playerManager.EnemyHp();
         }
         animator.SetBool("Attack",true);
     }
     //攻撃（キック）
     public void Kick()
     {
-        Collider[] hitEnemys = Physics.OverlapSphere(punchPoint.position, attackRadius, playerLayer);
+        Collider[] hitEnemys = Physics.OverlapSphere(kickPoint.position, attackRadius, playerLayer);
 
         foreach (Collider hitenemy in hitEnemys)
         {
             hitenemy.GetComponent<EnemyManager>().OnDamage();
-            playerManager.EnemyHp();
+            gameManager.playerManager.EnemyHp();
         }
 
         animator.SetTrigger("Kick");

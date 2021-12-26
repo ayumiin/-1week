@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
+    public GameManager gameManager;
+
     public FighterModel model;
     EnemyController enemyController;
     Animator animator;
@@ -18,6 +20,8 @@ public class EnemyManager : MonoBehaviour
 
     private void Awake()
     {
+        gameManager = GameManager.instance;
+
         enemyController = GetComponent<EnemyController>();
         model = new FighterModel(4);
     }
@@ -26,7 +30,7 @@ public class EnemyManager : MonoBehaviour
     {
         timer += Time.deltaTime;
    
-        distance = Vector3.Distance(enemyController.player.transform.position, this.transform.position);
+        distance = Vector3.Distance(gameManager.player.transform.position, this.transform.position);
         if (distance < 1.2)
         {
             enemyController.moveBackward();

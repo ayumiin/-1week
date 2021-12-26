@@ -12,11 +12,6 @@ public class PlayerController : MonoBehaviour
     public FighterModel model;
     PlayerManager playerManager;
 
-    //攻撃
-    public Transform punchPoint;
-    public Transform kickPoint;
-
-    public float attackRadius;
     public LayerMask enemyLayer;
 
     Rigidbody rb;
@@ -26,6 +21,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        StopAllCoroutines();
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         characterController = GetComponent<CharacterController>();
@@ -60,36 +56,49 @@ public class PlayerController : MonoBehaviour
 
         characterController.Move(moveDirection * Time.deltaTime);
     }
-    //攻撃（パンチ）
     public void Punch()
     {
-        Collider[] hitEnemys = Physics.OverlapSphere(punchPoint.position, attackRadius, enemyLayer);
+        StartCoroutine(CoroutinePunch());
+    }
+    public void Kick()
+    {
+        StartCoroutine(CoroutineKick());
+    }
+    //攻撃（パンチ）
+    public IEnumerator CoroutinePunch()
+    {
+        Collider[] hitEnemys = Physics.OverlapSphere(playerManager.punchPointTransform.position, playerManager.punchAttackRadius, enemyLayer);
+        animator.SetBool("Attack", true);
+        //0.2秒待機
+        yield return new WaitForSeconds(0.2f);
         foreach (Collider hitenemy in hitEnemys)
         {
             hitenemy.GetComponent<EnemyManager>().OnDamage();
             playerManager.EnemyHp();
         }
-        animator.SetBool("Attack", true);
-
     }
     //攻撃（キック）
-    public void Kick()
+    public IEnumerator CoroutineKick()
     {
-        Collider[] hitEnemys = Physics.OverlapSphere(punchPoint.position, attackRadius, enemyLayer);
-
+        Collider[] hitEnemys = Physics.OverlapSphere(playerManager.kickPointTransform.position, playerManager.kickAttackRadius, enemyLayer);
+        animator.SetTrigger("Kick");
+        //0.2秒待機
+        yield return new WaitForSeconds(0.2f);
         foreach (Collider hitenemy in hitEnemys)
         {
             hitenemy.GetComponent<EnemyManager>().OnDamage();
+            if(hitEnemys == null)
+            {
+                break;
+            }
             playerManager.EnemyHp();
             Debug.Log("attack");
         }
-
-        animator.SetTrigger("Kick");
     }
     //必殺技
     public void SpecialAttack()
     {
-        Collider[] hitEnemys = Physics.OverlapSphere(punchPoint.position, attackRadius, enemyLayer);
+        Collider[] hitEnemys = Physics.OverlapSphere(playerManager.punchPointTransform.position, playerManager.punchAttackRadius, enemyLayer);
         animator.SetTrigger("SpecialAttack");
     }
 }

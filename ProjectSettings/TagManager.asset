@@ -6,6 +6,9 @@ TagManager:
   tags:
   - ground
   - player
+  - kickPoint
+  - punchPoint
+  - enemy
   layers:
   - Default
   - TransparentFX

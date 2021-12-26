@@ -9,33 +9,35 @@ public class CharaSelect : MonoBehaviour
     public Text selectText;
     public GameObject selectButton;
 
-    public int N;
+    private void Awake()
+    {
+        //初期値の設定
+        PlayerPrefs.SetInt("Data", 0);
+    }
 
     public void SelectImage(int number)
     {
-        N = number;
-        switch(N)
+        switch(number)
         {
             case 0 :
-                PlayerPrefs.SetInt("Data",N);
+                PlayerPrefs.SetInt("Data",number);
                 selectText.text = "1人目";
-                Debug.Log(N);
                 break;
 
             case 1:
-                PlayerPrefs.SetInt("Data", N);
+                PlayerPrefs.SetInt("Data", number);
 
                 selectText.text = "2人目";
                 break;
 
             case 2:
-                PlayerPrefs.SetInt("Data", N);
+                PlayerPrefs.SetInt("Data", number);
 
                 selectText.text = "3人目";
                 break;
 
             case 3:
-                PlayerPrefs.SetInt("Data", N);
+                PlayerPrefs.SetInt("Data", number);
 
                 selectText.text = "4人目";
                 break;
