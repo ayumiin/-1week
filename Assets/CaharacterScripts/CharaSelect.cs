@@ -21,25 +21,30 @@ public class CharaSelect : MonoBehaviour
         {
             case 0 :
                 PlayerPrefs.SetInt("Data",number);
-                selectText.text = "1人目";
+
+                selectText.text = "全ての能力において平均値が高いバランスタイプ";
+                selectButton.SetActive(false);
                 break;
 
             case 1:
                 PlayerPrefs.SetInt("Data", number);
 
-                selectText.text = "2人目";
+                selectText.text = "動きが俊敏で早く動くことができるスピードタイプ";
+                selectButton.SetActive(false);
                 break;
 
             case 2:
                 PlayerPrefs.SetInt("Data", number);
 
-                selectText.text = "3人目";
+                selectText.text = "攻撃値が高いパワータイプ";
+                selectButton.SetActive(false);
                 break;
 
             case 3:
                 PlayerPrefs.SetInt("Data", number);
 
-                selectText.text = "4人目";
+                selectText.text = "防御能力が高いディフェンスタイプ";
+                selectButton.SetActive(false);
                 break;
         }
     }
