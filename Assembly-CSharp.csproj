@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
+<<<<<<< HEAD
     <LangVersion>7.3</LangVersion>
+=======
+    <LangVersion>8.0</LangVersion>
+>>>>>>> b239a6414cecdc292455e36030027c3ff80e88d1
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +13,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{2B141FEF-1567-FC38-54B3-D1A6FBBD51B4}</ProjectGuid>
+    <ProjectGuid>{BBB36D49-94C3-698C-7104-5A499044E471}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,6 +57,9 @@
     <UnityVersion>2020.2.7f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\Fighter Pack Bundle FREE\Code\CameraControl.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\TitleScripts\SceneController.cs" />
@@ -69,6 +76,10 @@
     <Compile Include="Assets\Scripts\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\ComboAnimetor.cs" />
     <Compile Include="Assets\CaharacterScripts\CharaSelect.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\Scripts\ResultManager.cs" />
+>>>>>>> b239a6414cecdc292455e36030027c3ff80e88d1
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\StdLib.hlsl" />
@@ -726,11 +737,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
-      <Project>{C01960EF-EFB0-3D62-0204-409545AB48A1}</Project>
+      <Project>{4D9E3683-B39B-50EA-BC3D-D95A03C5313B}</Project>
       <Name>Unity.Postprocessing.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
-      <Project>{E092E6F0-762A-27A0-1ECF-E38AF03B2AAC}</Project>
+      <Project>{7D784A9C-4066-AE72-2265-AB9265C37ACC}</Project>
       <Name>Unity.Postprocessing.Editor</Name>
     </ProjectReference>
   </ItemGroup>

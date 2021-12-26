@@ -26,7 +26,6 @@ public class GameManager : MonoBehaviour
         if(instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(this.gameObject);
         }
         obj = (GameObject)Resources.Load("Player" + PlayerPrefs.GetInt("Data"));
         CreatePlayer();
