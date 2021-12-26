@@ -13,7 +13,7 @@ public class EnemyManager : MonoBehaviour
     private int moveNumber;
     private int fightNumber;
     private float timer;
-    public float hp;
+    public float hitCount = 0.0f;
 
     //ƒvƒŒƒCƒ„[‚Æ‚Ì‹——£
     float distance;
@@ -73,11 +73,10 @@ public class EnemyManager : MonoBehaviour
     {
         Debug.Log("hit");
 
-        hp = 0;
-        hp += 1;
-        if(hp > 5)
+        hitCount += 1;
+        if(hitCount > 5)
         {
-            hp = 0;
+            hitCount = 0;
         }
     }
     public void FightGame()

@@ -95,6 +95,8 @@ public class PlayerManager : MonoBehaviour
             }
         }
 
+        
+
     }
     public void SpecialAttackCount()
     {
@@ -102,7 +104,7 @@ public class PlayerManager : MonoBehaviour
     }
     public void EnemyHp()
     {
-        if (gameManager.enemyManager.model.hp >= 5)
+        if (gameManager.enemyManager.hitCount >= 5)
         {
             SpecialAttackCount();
         }
