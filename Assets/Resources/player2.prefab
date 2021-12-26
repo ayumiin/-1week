@@ -2633,8 +2633,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4172854931391188}
   m_Layer: 0
+<<<<<<< HEAD
+  m_Name: player2
+  m_TagString: player
+=======
   m_Name: Thumb0_R
   m_TagString: Untagged
+>>>>>>> 914080a98d2b133b231f9a571012617461fce55b
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

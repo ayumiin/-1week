@@ -24,6 +24,6 @@ public class UIScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        slider.value = enemyManager.model.hp;
+        slider.value = enemyManager.hp;
     }
 }
