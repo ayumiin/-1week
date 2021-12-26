@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Fighter Pack Bundle FREE\Code\CameraControl.cs" />
+    <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\TitleScripts\SceneController.cs" />
     <Compile Include="Assets\player0\Demo\Scripts\UIManager.cs" />
     <Compile Include="Assets\Fighter Pack Bundle FREE\Code\FighterAnimationDemoFREE.cs" />
@@ -65,13 +66,12 @@
     <Compile Include="Assets\Scripts\EnemyController.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\FighterEntity.cs" />
+    <Compile Include="Assets\Scripts\TimeManager.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\FighterModel.cs" />
     <Compile Include="Assets\Scripts\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\ComboAnimetor.cs" />
     <Compile Include="Assets\CaharacterScripts\CharaSelect.cs" />
-    <Compile Include="Assets\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Scripts\TimeManager.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\StdLib.hlsl" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Debug\Waveform.shader" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\MultiScaleVOUpsample.compute" />

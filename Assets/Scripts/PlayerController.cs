@@ -67,11 +67,11 @@ public class PlayerController : MonoBehaviour
     //攻撃（パンチ）
     public IEnumerator CoroutinePunch()
     {
-        Collider[] hitEnemys = Physics.OverlapSphere(playerManager.punchPointTransform.position, playerManager.punchAttackRadius, enemyLayer);
+        Collider[] hitPunchEnemys = Physics.OverlapSphere(playerManager.punchPointTransform.position, playerManager.punchAttackRadius, enemyLayer);
         animator.SetBool("Attack", true);
         //0.2秒待機
         yield return new WaitForSeconds(0.2f);
-        foreach (Collider hitenemy in hitEnemys)
+        foreach (Collider hitenemy in hitPunchEnemys)
         {
             hitenemy.GetComponent<EnemyManager>().OnDamage();
             playerManager.EnemyHp();
@@ -80,18 +80,18 @@ public class PlayerController : MonoBehaviour
     //攻撃（キック）
     public IEnumerator CoroutineKick()
     {
-        Collider[] hitEnemys = Physics.OverlapSphere(playerManager.kickPointTransform.position, playerManager.kickAttackRadius, enemyLayer);
+        Collider[] hitKickEnemys = Physics.OverlapSphere(playerManager.kickPointTransform.position, playerManager.kickAttackRadius, enemyLayer);
         animator.SetTrigger("Kick");
         //0.2秒待機
         yield return new WaitForSeconds(0.2f);
-        foreach (Collider hitenemy in hitEnemys)
+        foreach (Collider hitenemy in hitKickEnemys)
         {
             hitenemy.GetComponent<EnemyManager>().OnDamage();
-            if(hitEnemys == null)
+            playerManager.EnemyHp();
+            if (hitKickEnemys == null)
             {
                 break;
-            }
-            playerManager.EnemyHp();
+            }          
             Debug.Log("attack");
         }
     }
