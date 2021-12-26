@@ -58,7 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Fighter Pack Bundle FREE\Code\CameraControl.cs" />
     <Compile Include="Assets\TitleScripts\SceneController.cs" />
-    <Compile Include="Assets\Rin New 3d - Anime Style\Demo\Scripts\UIManager.cs" />
+    <Compile Include="Assets\player0\Demo\Scripts\UIManager.cs" />
     <Compile Include="Assets\Fighter Pack Bundle FREE\Code\FighterAnimationDemoFREE.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\UIScript.cs" />
@@ -69,12 +69,15 @@
     <Compile Include="Assets\Scripts\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\ComboAnimetor.cs" />
     <Compile Include="Assets\CaharacterScripts\CharaSelect.cs" />
+    <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\TimeManager.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\StdLib.hlsl" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Debug\Waveform.shader" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\MultiScaleVOUpsample.compute" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\Distortion.hlsl" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\ExposureHistogram.hlsl" />
-    <None Include="Assets\Rin New 3d - Anime Style\Advance Unlit Shader\Advance Unlit.shader" />
+    <None Include="Assets\player0\Advance Unlit Shader\Advance Unlit.shader" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\Texture3DLerp.compute" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\DeferredFog.shader" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\TemporalAntialiasing.shader" />
@@ -87,7 +90,7 @@
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\CopyStdFromTexArray.shader" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\Lut3DBaker.compute" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Debug\Waveform.compute" />
-    <None Include="Assets\Rin New 3d - Anime Style\ReadMe!.txt" />
+    <None Include="Assets\player0\ReadMe!.txt" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\API\PSSL.hlsl" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Debug\LightMeter.shader" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\AutoExposure.compute" />
@@ -98,6 +101,7 @@
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\API\D3D11.hlsl" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\MultiScaleVODownsample2.compute" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\ScalableAO.hlsl" />
+    <None Include="Assets\player1\BaseCharacter\BaseCharacter\Sourcefiles\Shader\DoubleSided.shader" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\MultiScaleVO.shader" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Debug\Vectorscope.shader" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\API\D3D9.hlsl" />
@@ -119,6 +123,7 @@
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\DiscardAlpha.shader" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\API\OpenGL.hlsl" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\Lut2DBaker.shader" />
+    <None Include="Assets\player1\BaseCharacter\BaseCharacter\Sourcefiles\Shader\UnlitColor.shader" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\CopyStd.shader" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\MotionBlur.shader" />
     <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\MultiScaleVODownsample1.compute" />

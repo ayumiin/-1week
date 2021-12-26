@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
+    private GameManager gameManager;
     //“®‚«‚ÉŠÖ‚·‚éˆ—
     PlayerController pc;
 
@@ -13,20 +14,35 @@ public class PlayerManager : MonoBehaviour
 
     //•KE‹Z‚ÌÀ‘•
     public int number;
-    public GameObject enemy;
-
-    //enemy‚Ìæ“¾
-    EnemyManager enemyManager;
 
     //“G‚Æ‚Ì‹——£
     public float distance;
 
+    //UŒ‚
+    private GameObject punchPointObject;
+    public Transform punchPointTransform;
+    public float punchAttackRadius;
+
+    private GameObject kickPointObject;
+    public Transform kickPointTransform;
+    public float kickAttackRadius;
+
     private void Awake()
     {
-        enemyManager = enemy.GetComponent<EnemyManager>();
+        gameManager = GameManager.instance;
+        gameManager.FindEnemy();
+
         pc = GetComponent<PlayerController>();
         animator = GetComponent<Animator>();
-        //gameManager = GameManager.instance;
+
+        //punchPoint‚Ìİ’è
+        punchPointObject = GameObject.FindGameObjectWithTag("punchPoint");
+        punchPointTransform = punchPointObject.transform;
+        punchAttackRadius = 0.8f;
+        //kickPoint‚Ìİ’è
+        kickPointObject = GameObject.FindGameObjectWithTag("kickPoint");
+        kickPointTransform = punchPointObject.transform;
+        kickAttackRadius = 1f;
     }
     // Start is called before the first frame update
     void Start()
@@ -55,27 +71,27 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        distance = Vector3.Distance(this.transform.position, enemy.transform.position);
+        distance = Vector3.Distance(this.transform.position, gameManager.enemy.transform.position);
 
         pc.Movement(1);
 
         if (Input.GetKeyDown(KeyCode.W))
         {
             pc.Punch();
-            enemyManager.FightGame();
+            gameManager.enemyManager.FightGame();
         }
 
         if (Input.GetKeyDown(KeyCode.S))
         {
             pc.Kick();
-            enemyManager.FightGame();
+            gameManager.enemyManager.FightGame();
         }
         if (number >= 5)
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
                 pc.SpecialAttack();
-                enemyManager.FightGame();
+                gameManager.enemyManager.FightGame();
             }
         }
 
@@ -86,7 +102,7 @@ public class PlayerManager : MonoBehaviour
     }
     public void EnemyHp()
     {
-        if (enemyManager.model.hp >= 5)
+        if (gameManager.enemyManager.model.hp >= 5)
         {
             SpecialAttackCount();
         }
