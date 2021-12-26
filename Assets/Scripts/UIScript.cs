@@ -12,8 +12,9 @@ public class UIScript : MonoBehaviour
 
     private void Awake()
     {
+        slider.value = 0.0f;
         slider = GetComponent<Slider>();
-        enemyManager = enemy.GetComponent<EnemyManager>();
+        enemyManager = enemy.GetComponent<EnemyManager>(); 
     }
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,6 @@ public class UIScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        slider.value = enemyManager.hp;
+        slider.value = enemyManager.hitCount;
     }
 }

@@ -2868,6 +2868,7 @@ MonoBehaviour:
   punchAttackRadius: 0
   kickPointTransform: {fileID: 0}
   kickAttackRadius: 0
+  seinozi: []
 --- !u!143 &2172046987928595224
 CharacterController:
   m_ObjectHideFlags: 0

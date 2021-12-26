@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     public GameObject enemy;
     public EnemyManager enemyManager;
 
+
+    public GameObject[] seinozi;
+
     //public GameObject[] Fighter;
 
     [SerializeField] Vector3 playerPosition;
@@ -46,5 +49,30 @@ public class GameManager : MonoBehaviour
     {
         enemy = GameObject.FindGameObjectWithTag("enemy");
         enemyManager = enemy.GetComponent<EnemyManager>();
+    }
+
+    void Update()
+    {
+         
+        switch (playerManager.number)
+        {
+            case 0:
+                return;
+            case 1:
+                seinozi[0].SetActive(true);
+                break;
+            case 2:
+                seinozi[1].SetActive(true);
+                break;
+            case 3:
+                seinozi[2].SetActive(true);
+                break;
+            case 4:
+                seinozi[3].SetActive(true);
+                break;
+            case 5:
+                seinozi[4].SetActive(true);
+                break;
+        }
     }
 }
