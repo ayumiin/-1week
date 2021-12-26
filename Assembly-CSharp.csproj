@@ -58,11 +58,14 @@
   <ItemGroup>
     <Compile Include="Assets\Fighter Pack Bundle FREE\Code\CameraControl.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+<<<<<<< HEAD
+    <Compile Include="Assets\TitleScripts\SceneController.cs" />
+=======
+>>>>>>> 34be4fc6e510360c04f299189f91cc356540e2a3
     <Compile Include="Assets\Scripts\ResultManager.cs" />
     <Compile Include="Assets\player0\Demo\Scripts\UIManager.cs" />
     <Compile Include="Assets\Fighter Pack Bundle FREE\Code\FighterAnimationDemoFREE.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\UIScript.cs" />
     <Compile Include="Assets\Scripts\EnemyController.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\FighterEntity.cs" />
@@ -72,7 +75,12 @@
     <Compile Include="Assets\Scripts\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\ComboAnimetor.cs" />
     <Compile Include="Assets\CaharacterScripts\CharaSelect.cs" />
+<<<<<<< HEAD
+    <Compile Include="Assets\Scripts\EnemyUIScript.cs" />
+    <Compile Include="Assets\Scripts\PlayerUI.cs" />
+=======
     <Compile Include="Assets\TitleScripts\Tutorial.cs" />
+>>>>>>> 34be4fc6e510360c04f299189f91cc356540e2a3
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\GDR_FightingGameCharacters\PostProcessing\Shaders\StdLib.hlsl" />

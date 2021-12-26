@@ -13,10 +13,19 @@ public class EnemyManager : MonoBehaviour
     private int moveNumber;
     private int fightNumber;
     private float timer;
-    public float hitCount = 0.0f;
+    public float hitCount;
 
     //ÉvÉåÉCÉÑÅ[Ç∆ÇÃãóó£
     float distance;
+
+    //çUåÇ
+    private GameObject punchPointObject;
+    public Transform punchPointTransform;
+    public float punchAttackRadius;
+
+    private GameObject kickPointObject;
+    public Transform kickPointTransform;
+    public float kickAttackRadius;
 
     private void Awake()
     {
@@ -26,6 +35,19 @@ public class EnemyManager : MonoBehaviour
         model = new FighterModel(4);
     }
 
+    private void Start()
+    {
+        hitCount = 0;
+        //punchPointÇÃê›íË
+        punchPointObject = GameObject.FindGameObjectWithTag("EnemypunchPoint");
+        punchPointTransform = punchPointObject.transform;
+        punchAttackRadius = 0.8f;
+        //kickPointÇÃê›íË
+        kickPointObject = GameObject.FindGameObjectWithTag("EnemykickPoint");
+        kickPointTransform = punchPointObject.transform;
+        kickAttackRadius = 1f;
+    }
+
     private void Update()
     {
         timer += Time.deltaTime;
@@ -33,11 +55,36 @@ public class EnemyManager : MonoBehaviour
         distance = Vector3.Distance(gameManager.player.transform.position, this.transform.position);
         if (distance < 1.2)
         {
-            enemyController.moveBackward();
+            moveNumber = Mathf.RoundToInt(Random.Range(1, 5));
+            switch (moveNumber)
+            {
+                case 1:
+                    enemyController.enemyJump();
+                    break;
+                case 2:
+                    enemyController.Punch();
+                    break;
+                case 3:
+                    enemyController.Kick();
+                    break;
+                case 4:
+                    enemyController.moveBackward();
+                    break;
+                case 5:
+                    return;
+            }
+        }
+        else if(distance > 8)
+        {
+            enemyController.moveForward();
+        }
+        else if(distance < 1.2 && enemyController.number >= 5)
+        {
+            enemyController.SpecialAttack();
         }
         else if (distance >= 5 && timer > 0.5)
         {
-            moveNumber = Mathf.RoundToInt(Random.Range(1, 4));
+            moveNumber = Mathf.RoundToInt(Random.Range(1, 3));
             switch (moveNumber)
             {
                 case 1:
@@ -46,6 +93,8 @@ public class EnemyManager : MonoBehaviour
                 case 2:
                     enemyController.moveForward();
                     break;
+                case 3:
+                    return;
             }
         }
         else if (timer > 0.5)
@@ -71,11 +120,12 @@ public class EnemyManager : MonoBehaviour
 
     public void OnDamage()
     {
-        Debug.Log("hit");
-
         hitCount += 1;
+        PlayerUI.instance.HitCountUp(hitCount);
         if(hitCount > 5)
         {
+            gameManager.playerManager.SpecialAttackCount();
+
             hitCount = 0;
         }
     }
@@ -100,6 +150,7 @@ public class EnemyManager : MonoBehaviour
                 enemyController.moveForward();
                 break;
             case 6:
+                enemyController.Punch();
                 return;
         }
     }

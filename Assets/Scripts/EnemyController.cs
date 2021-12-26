@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyController : MonoBehaviour
 {
@@ -8,14 +10,14 @@ public class EnemyController : MonoBehaviour
     //当たり判定
     CapsuleCollider capsuleCollider;
 
+    public bool isOnHit = false;
+    public float hitCount;
+    public int number;
+
     //data
     public FighterModel model;
 
     //攻撃
-    public Transform punchPoint;
-    public Transform kickPoint;
-
-    public float attackRadius;
     public LayerMask playerLayer;
 
     Rigidbody rb;
@@ -35,7 +37,7 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        hitCount = 0;
     }
 
     // Update is called once per frame
@@ -65,31 +67,46 @@ public class EnemyController : MonoBehaviour
     //攻撃（パンチ）
     public void Punch()
     {
-        Collider[] hitEnemys = Physics.OverlapSphere(punchPoint.position, attackRadius, playerLayer);
-        foreach (Collider hitenemy in hitEnemys)
+        if (Physics.OverlapSphere(gameManager.enemyManager.punchPointTransform.position, gameManager.enemyManager.punchAttackRadius, playerLayer).Length > 0)
         {
-            hitenemy.GetComponent<EnemyManager>().OnDamage();
-            gameManager.playerManager.EnemyHp();
+            isOnHit = true;
+            hitCount++;
+        }
+        else
+        {
+            isOnHit = false;
         }
         animator.SetBool("Attack",true);
     }
     //攻撃（キック）
     public void Kick()
     {
-        Collider[] hitEnemys = Physics.OverlapSphere(kickPoint.position, attackRadius, playerLayer);
-
-        foreach (Collider hitenemy in hitEnemys)
+        if (Physics.OverlapSphere(gameManager.enemyManager.kickPointTransform.position, gameManager.enemyManager.kickAttackRadius, playerLayer).Length > 0)
         {
-            hitenemy.GetComponent<EnemyManager>().OnDamage();
-            gameManager.playerManager.EnemyHp();
+            isOnHit = true;
+            hitCount++;
         }
-
+        else
+        {
+            isOnHit = false;
+        }
         animator.SetTrigger("Kick");
     }
     //必殺技
     public void SpecialAttack()
     {
-        Collider[] hitEnemys = Physics.OverlapSphere(punchPoint.position, attackRadius, playerLayer);
+
+        if (Physics.OverlapSphere(gameManager.enemyManager.punchPointTransform.position, gameManager.enemyManager.punchAttackRadius, playerLayer).Length > 0)
+        {
+            SceneManager.LoadScene("Result");
+        }
+        //必殺外す
+        else
+        {
+            hitCount = 0;
+            number = 0;
+            EnemyUIScript.instance.CountUp(number);
+        }
         animator.SetTrigger("SpecialAttack");
     }
     //地面に接地

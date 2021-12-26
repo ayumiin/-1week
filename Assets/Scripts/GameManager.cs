@@ -8,14 +8,14 @@ public class GameManager : MonoBehaviour
     private GameObject obj;
     public GameObject player;
     public PlayerManager playerManager;
+    public PlayerController playerController;
 
     public GameObject enemy;
     public EnemyManager enemyManager;
+    public EnemyController enemyController;
 
 
     public GameObject[] seinozi;
-
-    //public GameObject[] Fighter;
 
     [SerializeField] Vector3 playerPosition;
 
@@ -32,6 +32,19 @@ public class GameManager : MonoBehaviour
         FindPlayer();
         FindEnemy();
     }
+    private void Update()
+    {
+        
+        if(playerManager.number >= 5)
+        {
+            MaxNumber(playerManager.number);
+        }
+        else
+        {
+            MaxNumber(enemyManager.hitCount);
+        }
+        
+    }
 
     private void CreatePlayer()
     {
@@ -44,35 +57,18 @@ public class GameManager : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("player");
         playerManager = player.GetComponent<PlayerManager>();
+        playerController = player.GetComponent<PlayerController>();
     }
     public void FindEnemy()
     {
         enemy = GameObject.FindGameObjectWithTag("enemy");
         enemyManager = enemy.GetComponent<EnemyManager>();
+        enemyController = enemy.GetComponent<EnemyController>();
     }
-
-    void Update()
+    
+    void MaxNumber(float number)
     {
-         
-        switch (playerManager.number)
-        {
-            case 0:
-                return;
-            case 1:
-                seinozi[0].SetActive(true);
-                break;
-            case 2:
-                seinozi[1].SetActive(true);
-                break;
-            case 3:
-                seinozi[2].SetActive(true);
-                break;
-            case 4:
-                seinozi[3].SetActive(true);
-                break;
-            case 5:
-                seinozi[4].SetActive(true);
-                break;
-        }
+        enemyManager.hitCount = number;
     }
+    
 }
