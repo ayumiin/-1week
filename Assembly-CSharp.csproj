@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{BBB36D49-94C3-698C-7104-5A499044E471}</ProjectGuid>
+    <ProjectGuid>{2B141FEF-1567-FC38-54B3-D1A6FBBD51B4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -731,11 +731,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
-      <Project>{4D9E3683-B39B-50EA-BC3D-D95A03C5313B}</Project>
+      <Project>{C01960EF-EFB0-3D62-0204-409545AB48A1}</Project>
       <Name>Unity.Postprocessing.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
-      <Project>{7D784A9C-4066-AE72-2265-AB9265C37ACC}</Project>
+      <Project>{E092E6F0-762A-27A0-1ECF-E38AF03B2AAC}</Project>
       <Name>Unity.Postprocessing.Editor</Name>
     </ProjectReference>
   </ItemGroup>

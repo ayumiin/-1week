@@ -8,6 +8,7 @@ public class CharaSelect : MonoBehaviour
 {
     public Text selectText;
     public GameObject selectButton;
+    public GameObject clickButton;
 
     private void Awake()
     {
@@ -24,6 +25,7 @@ public class CharaSelect : MonoBehaviour
 
                 selectText.text = "全ての能力において平均値が高いバランスタイプ";
                 selectButton.SetActive(false);
+                clickButton.SetActive(true);
                 break;
 
             case 1:
@@ -31,6 +33,7 @@ public class CharaSelect : MonoBehaviour
 
                 selectText.text = "動きが俊敏で早く動くことができるスピードタイプ";
                 selectButton.SetActive(false);
+                clickButton.SetActive(true);
                 break;
 
             case 2:
@@ -38,6 +41,7 @@ public class CharaSelect : MonoBehaviour
 
                 selectText.text = "攻撃値が高いパワータイプ";
                 selectButton.SetActive(false);
+                clickButton.SetActive(true);
                 break;
 
             case 3:
@@ -45,6 +49,7 @@ public class CharaSelect : MonoBehaviour
 
                 selectText.text = "防御能力が高いディフェンスタイプ";
                 selectButton.SetActive(false);
+                clickButton.SetActive(true);
                 break;
         }
     }
@@ -53,6 +58,7 @@ public class CharaSelect : MonoBehaviour
     {
         selectText.text = "このキャラでいいですか？";
         selectButton.SetActive(true);
+        clickButton.SetActive(false);
     }
 
     public void YesNoSelect(int number)
