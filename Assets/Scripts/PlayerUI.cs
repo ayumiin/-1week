@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class PlayerUI : MonoBehaviour
 {
-    [SerializeField] Slider slider;
+    public Slider slider;
 
     [SerializeField] GameObject[] seinozi;
+    [SerializeField] GameObject enemy;
+    EnemyManager enemyManager;
 
     public static PlayerUI instance;
 
@@ -20,13 +22,13 @@ public class PlayerUI : MonoBehaviour
     }
     private void Start()
     {
-        slider = GetComponent<Slider>();
+        enemyManager = enemy.GetComponent<EnemyManager>();
         slider.maxValue = 5;
     }
     // Update is called once per frame
     void Update()
     {
-        slider.value = GameManager.instance.enemyManager.hitCount;
+        //slider.value = enemyManager.hitCount;
     }
     public void CountUp(int countNumber)
     {

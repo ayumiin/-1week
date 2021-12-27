@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15f25b1ad668f8b41967ab99b4a6739b, type: 3}
   m_Name: FighterEntity2
   m_EditorClassIdentifier: 
-  Attack: 10
-  Defence: 10
-  MoveJump: 5
+  hp: 0
+  Attack: 2
+  Defence: 1
+  MoveJump: 6
+  MoveSpeed: 5

@@ -16,4 +16,4 @@ MonoBehaviour:
   Attack: 5
   Defence: 5
   MoveJump: 5
-  MoveSpeed: 8
+  MoveSpeed: 4

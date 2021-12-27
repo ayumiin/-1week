@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimeManager : MonoBehaviour
 {
     public Text timerText;
     private int second;
-    private float timer;
+    private float countdownTimer = 90.0f;
+    private float countupTimer;
 
     private void Awake()
     {
@@ -16,14 +18,20 @@ public class TimeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        second = (int)timer;
+        countupTimer += Time.deltaTime;
+        countdownTimer -= Time.deltaTime;
+        second = (int)countdownTimer;
         timerText.text = second.ToString();
 
-        Save(second);
+        Save(countupTimer);
+
+        if(second <= 0)
+        {
+            SceneManager.LoadScene("Result");
+        }
     }
     //I—¹Žž‚ÌŽžŠÔ‚ð•Û‘¶
-    private void Save(int time)
+    private void Save(float time)
     {
         PlayerPrefs.SetFloat("FinishTime", time);
     }

@@ -28,6 +28,8 @@ public class PlayerManager : MonoBehaviour
     public Transform kickPointTransform;
     public float kickAttackRadius;
 
+    public float hitCount = 0.0f;
+
     private void Awake()
     {
         gameManager = GameManager.instance;
@@ -100,5 +102,16 @@ public class PlayerManager : MonoBehaviour
     {
         number++;
         PlayerUI.instance.CountUp(number);
+    }
+    public void OnDamage()
+    {
+        hitCount += 1;
+        EnemyUIScript.instance.HitCountUp(hitCount);
+        if (hitCount > 5)
+        {
+           gameManager.enemyManager.SpecialAttackCount();
+
+            hitCount = 0;
+        }
     }
 }
