@@ -8,8 +8,9 @@ public class TimeManager : MonoBehaviour
 {
     public Text timerText;
     private int second;
-    private float countdownTimer = 90.0f;
+    private float countdownTimer = 94f;
     private float countupTimer;
+    public static float startCount = 3.5f;
 
     private void Awake()
     {
@@ -18,16 +19,26 @@ public class TimeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        startCount -= Time.deltaTime;
+        if(startCount >= 0)
+        {
+            timerText.text = "";
+        }
+        else
+        {
+
+            timerText.text = second.ToString();
+        }
         countupTimer += Time.deltaTime;
         countdownTimer -= Time.deltaTime;
         second = (int)countdownTimer;
-        timerText.text = second.ToString();
 
         Save(countupTimer);
 
         if(second <= 0)
         {
             SceneManager.LoadScene("Result");
+            PlayerPrefs.SetInt("Result", 3);
         }
     }
     //I—¹Žž‚ÌŽžŠÔ‚ð•Û‘¶

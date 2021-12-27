@@ -105,9 +105,9 @@ public class PlayerManager : MonoBehaviour
     }
     public void OnDamage()
     {
-        hitCount += 1;
+        hitCount += gameManager.enemyManager.model.at/ gameManager.playerManager.model.df;
         EnemyUIScript.instance.HitCountUp(hitCount);
-        if (hitCount > 5)
+        if (hitCount > model.hp)
         {
            gameManager.enemyManager.SpecialAttackCount();
 

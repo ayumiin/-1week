@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 moveDirection.y = playerManager.model.moveJump;
+                animator.SetTrigger("jump");
             }
         }
         moveDirection.y -= 10 * Time.deltaTime;
@@ -110,9 +111,10 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetTrigger("SpecialAttack");
 
-        if (Physics.OverlapSphere(playerManager.punchPointTransform.position, playerManager.punchAttackRadius, enemyLayer).Length > 0)
+        if (Physics.OverlapSphere(playerManager.kickPointTransform.position, playerManager.kickAttackRadius, enemyLayer).Length > 0)
         {
-            SceneManager.LoadScene("Result");
+            GameManager.instance.isWin = true;
+            GameManager.instance.IsBattle(GameManager.instance.isWin);
         }
         //•KŽEŠO‚·
         else
