@@ -48,8 +48,13 @@ public class EnemyController : MonoBehaviour
     {
         if(isGround)
         {
+            animator.SetTrigger("jump");
             rb.velocity = new Vector3(0, 5, 0);
             isGround = false;
+        }
+        else
+        {
+            return;
         }
     }
     //前進
@@ -95,10 +100,10 @@ public class EnemyController : MonoBehaviour
     //必殺技
     public void SpecialAttack()
     {
-
-        if (Physics.OverlapSphere(gameManager.enemyManager.punchPointTransform.position, gameManager.enemyManager.punchAttackRadius, playerLayer).Length > 0)
+        animator.SetTrigger("SpecialAttack");
+        if (Physics.OverlapSphere(gameManager.enemyManager.kickPointTransform.position, gameManager.enemyManager.kickAttackRadius, playerLayer).Length > 0)
         {
-            SceneManager.LoadScene("Result");
+            StartCoroutine(HitSpecial());
         }
         //必殺外す
         else
@@ -107,7 +112,6 @@ public class EnemyController : MonoBehaviour
             gameManager.enemyManager.number = 0;
             EnemyUIScript.instance.CountUp(number);
         }
-        animator.SetTrigger("SpecialAttack");
     }
     //地面に接地
     private void OnCollisionStay(Collision collision)
@@ -124,5 +128,13 @@ public class EnemyController : MonoBehaviour
         {
             isGround = false;
         }
+    }
+    private IEnumerator HitSpecial()
+    {
+        GameManager.instance.isWin = false;
+
+        yield return new WaitForSeconds(1);
+
+        GameManager.instance.IsBattle(GameManager.instance.isWin);
     }
 }

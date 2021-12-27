@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class ResultManager : MonoBehaviour
 {
@@ -11,14 +13,35 @@ public class ResultManager : MonoBehaviour
     private GameObject player;
     private GameObject resultPlayer;
     [SerializeField] Vector3 position;
+    [SerializeField] Text timer,resultText;
+    private Animator animator;
+    private GameObject prefabObj;
+
     private void Awake()
     {
         player = (GameObject)Resources.Load("Resultplayer" + PlayerPrefs.GetInt("Data"));
-        GameObject prefbObj = Instantiate(player, position, Quaternion.identity);
-        prefbObj.transform.Rotate(new Vector3(0, 180, 0));
-
+        prefabObj = Instantiate(player, position, Quaternion.identity);
+    }
+    private void Start()
+    {
         resultPlayer = GameObject.FindGameObjectWithTag("player");
+        animator = resultPlayer.GetComponent<Animator>();
 
         cc = resultPlayer.GetComponent<CapsuleCollider>();
+
+        timer.text = PlayerPrefs.GetFloat("FinishTime").ToString("F2");
+        if(PlayerPrefs.GetInt("Result") == 1)
+        {
+            resultText.text = "èüóò";
+            animator.SetTrigger("WIN");
+            prefabObj.transform.Rotate(new Vector3(0, 180, 0));
+        }
+        else
+        {
+            resultText.text = "îsñk";
+            animator.SetTrigger("LOSE");
+            prefabObj.transform.Rotate(new Vector3(0, 130, 0));
+        }
+
     }
 }

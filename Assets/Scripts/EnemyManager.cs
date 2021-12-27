@@ -56,17 +56,17 @@ public class EnemyManager : MonoBehaviour
         distance = Vector3.Distance(gameManager.player.transform.position, this.transform.position);
 
         //StartCoroutine(EnemyAI());
-        if(timer >= 0.5)
+        if(timer >= 0.2)
         {
             if (distance > 8)
             {
                 enemyController.moveForward();
             }
-            else if (distance < 1.2 && number >= 5)
+            else if (distance < 1.5 && number >= 5)
             {
                 enemyController.SpecialAttack();
             }
-            else if (distance >= 1.2)
+            else if (distance >= 1.7)
             {
                 moveNumber = Mathf.RoundToInt(Random.Range(1, 4));
                 switch (moveNumber)
@@ -84,7 +84,7 @@ public class EnemyManager : MonoBehaviour
                         return;
                 }
             }
-            else if (distance < 1.2)
+            else if (distance < 1.7)
             {
                 moveNumber = Mathf.RoundToInt(Random.Range(1, 5));
                 switch (moveNumber)
@@ -112,9 +112,9 @@ public class EnemyManager : MonoBehaviour
 
     public void OnDamage()
     {
-        hitCount += 1;
+        hitCount += gameManager.playerManager.model.at/gameManager.enemyManager.model.df;
         PlayerUI.instance.HitCountUp(hitCount);
-        if(hitCount > 5)
+        if(hitCount > model.hp)
         {
             gameManager.playerManager.SpecialAttackCount();
             hitCount = 0;

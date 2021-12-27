@@ -18,9 +18,11 @@ public class GameManager : MonoBehaviour
     public GameObject[] seinozi;
 
     [SerializeField] Vector3 playerPosition;
+    [SerializeField] GameObject startObj;
 
     public static GameManager instance;
 
+    public bool isWin;
     private void Awake()
     {
         if(instance == null)
@@ -43,13 +45,22 @@ public class GameManager : MonoBehaviour
         {
             MaxNumber(enemyManager.hitCount);
         }
-        
+
+        if (TimeManager.startCount >= 0)
+        {
+            startObj.SetActive(true);
+        }
+        else
+        {
+            startObj.SetActive(false);
+        }
     }
 
     private void CreatePlayer()
     {
         GameObject prefbObj = Instantiate(obj, playerPosition, Quaternion.identity);
-        prefbObj.transform.position = new Vector3(-3, 4, 3);
+
+        prefbObj.transform.position = new Vector3(-3, 3, 3);
         prefbObj.transform.Rotate(new Vector3(0, 180, 0));
     }
 
@@ -69,6 +80,18 @@ public class GameManager : MonoBehaviour
     void MaxNumber(float number)
     {
         enemyManager.hitCount = number;
+    }
+    public void IsBattle(bool win)
+    {
+        //‚P‚È‚çŸ—˜‚Q‚È‚ç”s–k‚ÆƒŠƒUƒ‹ƒg‰æ–Ê‚É•\¦‚³‚¹‚é
+        if(win)
+        {
+            PlayerPrefs.SetInt("Result", 1);
+        }else
+        {
+            PlayerPrefs.SetInt("Result", 2);
+        }
+        SceneManager.LoadScene("Result");
     }
     
 }

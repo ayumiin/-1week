@@ -9,7 +9,9 @@ public class PlayerUI : MonoBehaviour
 
     [SerializeField] GameObject[] seinozi;
     [SerializeField] GameObject enemy;
+    [SerializeField] Text startTimer;
     EnemyManager enemyManager;
+    
 
     public static PlayerUI instance;
 
@@ -28,6 +30,18 @@ public class PlayerUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(TimeManager.startCount >= 1)
+        {
+            startTimer.text = TimeManager.startCount.ToString("F0");
+        }
+        else if(TimeManager.startCount < 1 && TimeManager.startCount >= 0)
+        {
+            startTimer.text = "START";
+        }
+        else
+        {
+            startTimer.text = "";
+        }
         //slider.value = enemyManager.hitCount;
     }
     public void CountUp(int countNumber)

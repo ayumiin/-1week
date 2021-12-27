@@ -2808,7 +2808,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750625887683472}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -3, y: 3, z: 3}
+  m_LocalPosition: {x: -3, y: 3.61, z: 3}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 4604478809923606}
@@ -2869,6 +2869,7 @@ MonoBehaviour:
   punchAttackRadius: 0
   kickPointTransform: {fileID: 0}
   kickAttackRadius: 0
+  hitCount: 0
 --- !u!143 &2172046987928595224
 CharacterController:
   m_ObjectHideFlags: 0

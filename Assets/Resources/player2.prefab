@@ -5181,8 +5181,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   number: 0
+  isSpecialAttack: 0
   distance: 0
   punchPointTransform: {fileID: 0}
   punchAttackRadius: 0
   kickPointTransform: {fileID: 0}
   kickAttackRadius: 0
+  hitCount: 0
