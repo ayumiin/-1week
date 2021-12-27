@@ -882,7 +882,7 @@ GameObject:
   - component: {fileID: 148040476}
   m_Layer: 6
   m_Name: Right ankle
-  m_TagString: EnemykickPoubt
+  m_TagString: EnemykickPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3630,7 +3630,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: dd72bda57df201d4cb92d98999547c9e, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -4190,8 +4190,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5180aa6e0f85d64b844600f4e4a2466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOnHit: 0
-  hitCount: 0
   number: 0
   playerLayer:
     serializedVersion: 2
@@ -4275,6 +4273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1266505000}
+  number: 0
   hitCount: 0
   punchPointTransform: {fileID: 0}
   punchAttackRadius: 0
@@ -4307,7 +4306,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362354498}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.58, z: -0.02}
+  m_LocalPosition: {x: 0, y: 3.3, z: -0.02}
   m_LocalScale: {x: 9.1743, y: 6.094, z: 0.26674}
   m_Children: []
   m_Father: {fileID: 1345821470}
@@ -4708,7 +4707,7 @@ GameObject:
   - component: {fileID: 1443350071}
   m_Layer: 6
   m_Name: Left ankle
-  m_TagString: EnemykickPoubt
+  m_TagString: EnemykickPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5214,15 +5213,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8607534bd2c7e49a078fe4270a2c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyManager: {fileID: 0}
-  enemy: {fileID: 1345821464}
-  slider: {fileID: 1688777405}
-  seinozi:
-  - {fileID: 1781223543}
-  - {fileID: 1261086399}
-  - {fileID: 678519916}
-  - {fileID: 252905878}
-  - {fileID: 128095480}
 --- !u!114 &1688777405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5865,6 +5855,7 @@ MonoBehaviour:
   - {fileID: 462054312}
   - {fileID: 824351666}
   - {fileID: 123265447}
+  enemy: {fileID: 1345821464}
 --- !u!1 &1889587839
 GameObject:
   m_ObjectHideFlags: 0

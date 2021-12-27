@@ -10,8 +10,6 @@ public class EnemyController : MonoBehaviour
     //当たり判定
     CapsuleCollider capsuleCollider;
 
-    public bool isOnHit = false;
-    public float hitCount;
     public int number;
 
     //data
@@ -37,7 +35,7 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        hitCount = 0;
+
     }
 
     // Update is called once per frame
@@ -67,30 +65,32 @@ public class EnemyController : MonoBehaviour
     //攻撃（パンチ）
     public void Punch()
     {
+        animator.SetBool("Attack", true);
+
         if (Physics.OverlapSphere(gameManager.enemyManager.punchPointTransform.position, gameManager.enemyManager.punchAttackRadius, playerLayer).Length > 0)
         {
-            isOnHit = true;
-            hitCount++;
+            gameManager.playerManager.OnDamage();
+            gameManager.playerController.OnHit();
         }
         else
         {
-            isOnHit = false;
+            return;
         }
-        animator.SetBool("Attack",true);
     }
     //攻撃（キック）
     public void Kick()
     {
+        animator.SetTrigger("Kick");
+
         if (Physics.OverlapSphere(gameManager.enemyManager.kickPointTransform.position, gameManager.enemyManager.kickAttackRadius, playerLayer).Length > 0)
         {
-            isOnHit = true;
-            hitCount++;
+            gameManager.playerManager.OnDamage();
+            gameManager.playerController.OnHit();
         }
         else
         {
-            isOnHit = false;
+            return;
         }
-        animator.SetTrigger("Kick");
     }
     //必殺技
     public void SpecialAttack()
@@ -103,8 +103,8 @@ public class EnemyController : MonoBehaviour
         //必殺外す
         else
         {
-            hitCount = 0;
-            number = 0;
+            gameManager.playerManager.hitCount = 0;
+            gameManager.enemyManager.number = 0;
             EnemyUIScript.instance.CountUp(number);
         }
         animator.SetTrigger("SpecialAttack");

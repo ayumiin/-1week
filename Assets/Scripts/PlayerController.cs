@@ -32,14 +32,7 @@ public class PlayerController : MonoBehaviour
     }
     private void Update()
     {
-        if(GameManager.instance.enemyController.isOnHit)
-        {
-            StartCoroutine(OnHit());
-        }
-        else
-        {
-            return;
-        }
+
     }
     //jump,‰¡ˆÚ“®
     public void Movement(float z)
@@ -76,6 +69,10 @@ public class PlayerController : MonoBehaviour
     public void Kick()
     {
         StartCoroutine(CoroutineKick());
+    }
+    public void OnHit()
+    {
+        StartCoroutine(CoroutineOnHit());
     }
     //UŒ‚iƒpƒ“ƒ`j
     public IEnumerator CoroutinePunch()
@@ -123,16 +120,15 @@ public class PlayerController : MonoBehaviour
             playerManager.number = 0;
             GameManager.instance.enemyManager.hitCount = 0;
             PlayerUI.instance.CountUp(playerManager.number);
+            PlayerUI.instance.HitCountUp(GameManager.instance.enemyManager.hitCount);
         }
     }
-    //UŒ‚‚ğó‚¯‚½‚Ìˆ—
-    public IEnumerator OnHit()
+    //UŒ‚‚ğó‚¯‚½‚Ìanime
+    public IEnumerator CoroutineOnHit()
     {
         animator.SetTrigger("hit");
         StopCoroutine(CoroutinePunch());
         StopCoroutine(CoroutineKick());
         yield return new WaitForSeconds(0.5f);
-
-        GameManager.instance.enemyController.isOnHit = false;
     }
 }

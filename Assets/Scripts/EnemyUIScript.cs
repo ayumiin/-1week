@@ -20,13 +20,12 @@ public class EnemyUIScript : MonoBehaviour
     }
     private void Start()
     {
-        slider = GetComponent<Slider>();
         slider.maxValue = 5;
     }
     // Update is called once per frame
     void Update()
     {
-        slider.value = GameManager.instance.enemyController.hitCount;
+        //slider.value = enemyController.hitCount;
     }
     public void CountUp(int countNumber)
     {
@@ -54,5 +53,9 @@ public class EnemyUIScript : MonoBehaviour
                 seinozi[4].SetActive(true);
                 break;
         }
+    }
+    public void HitCountUp(float hitCount)
+    {
+        slider.value = hitCount;
     }
 }
