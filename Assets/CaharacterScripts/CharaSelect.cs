@@ -9,6 +9,9 @@ public class CharaSelect : MonoBehaviour
     public Text selectText;
     public GameObject selectButton;
     public GameObject clickButton;
+    public AudioSource audioSource;
+    public AudioClip selectSE;
+    public AudioClip cancelSE;
 
     private void Awake()
     {
@@ -25,7 +28,8 @@ public class CharaSelect : MonoBehaviour
 
                 selectText.text = "全ての能力において平均値が高いバランスタイプ";
                 selectButton.SetActive(false);
-                clickButton.SetActive(true);
+                clickButton.SetActive(true); 
+                audioSource.PlayOneShot(selectSE);
                 break;
 
             case 1:
@@ -34,6 +38,7 @@ public class CharaSelect : MonoBehaviour
                 selectText.text = "動きが俊敏で早く動くことができるスピードタイプ";
                 selectButton.SetActive(false);
                 clickButton.SetActive(true);
+                audioSource.PlayOneShot(selectSE);
                 break;
 
             case 2:
@@ -42,6 +47,7 @@ public class CharaSelect : MonoBehaviour
                 selectText.text = "攻撃値が高いパワータイプ";
                 selectButton.SetActive(false);
                 clickButton.SetActive(true);
+                audioSource.PlayOneShot(selectSE);
                 break;
 
             case 3:
@@ -50,6 +56,7 @@ public class CharaSelect : MonoBehaviour
                 selectText.text = "防御能力が高いディフェンスタイプ";
                 selectButton.SetActive(false);
                 clickButton.SetActive(true);
+                audioSource.PlayOneShot(selectSE);
                 break;
         }
     }
@@ -59,6 +66,7 @@ public class CharaSelect : MonoBehaviour
         selectText.text = "このキャラでいいですか？";
         selectButton.SetActive(true);
         clickButton.SetActive(false);
+        audioSource.PlayOneShot(selectSE);
     }
 
     public void YesNoSelect(int number)
@@ -67,10 +75,12 @@ public class CharaSelect : MonoBehaviour
         {
             case 0:
                 SceneManager.LoadScene("Game");
+                audioSource.PlayOneShot(selectSE);
                 break;
             case 1:
                 selectText.text = "キャラを選んでください";
                 selectButton.SetActive(false);
+                audioSource.PlayOneShot(cancelSE);
                 break;
         }
     }

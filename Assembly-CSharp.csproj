@@ -61,7 +61,7 @@
     <Compile Include="Assets\Scripts\ResultManager.cs" />
     <Compile Include="Assets\player0\Demo\Scripts\UIManager.cs" />
     <Compile Include="Assets\Fighter Pack Bundle FREE\Code\FighterAnimationDemoFREE.cs" />
-    <Compile Include="Assets\TitleScripts\Tutorial.cs" />
+    <Compile Include="Assets\Scripts\Tutorial.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\EnemyController.cs" />
     <Compile Include="Assets\Scripts\PlayerUI.cs" />
