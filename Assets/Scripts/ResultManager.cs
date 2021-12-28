@@ -18,6 +18,9 @@ public class ResultManager : MonoBehaviour
     private Animator animator;
     private GameObject prefabObj;
 
+    public AudioSource audioSource;
+    public AudioClip selectSE;
+
     private void Awake()
     {
         player = (GameObject)Resources.Load("Resultplayer" + PlayerPrefs.GetInt("Data"));
@@ -43,10 +46,10 @@ public class ResultManager : MonoBehaviour
             animator.SetTrigger("LOSE");
             prefabObj.transform.Rotate(new Vector3(0, 90, 0));
         }
-
     }
     public void Retry()
     {
+        audioSource.PlayOneShot(selectSE);
         SceneManager.LoadScene("CharaSelect");
     }
 }
