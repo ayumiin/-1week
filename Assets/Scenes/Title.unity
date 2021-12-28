@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -792,7 +792,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &432826250
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1745,7 +1745,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1078969631
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2904,7 +2904,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "W\uFF1A\u30D1\u30F3\u30C1\u3000\nS\uFF1A\u30AD\u30C3\u30AF\nF\uFF1A\u5FC5\u6BBA\u6280\n\u30B9\u30DA\u30FC\u30B9\uFF1A\u30B8\u30E3\u30F3\u30D7"
+  m_Text: "A\uFF1A\u5DE6\u79FB\u52D5\u3000D\uFF1A\u53F3\u79FB\u52D5\nW\uFF1A\u30D1\u30F3\u30C1\u3000S\uFF1A\u30AD\u30C3\u30AF\nF\uFF1A\u5FC5\u6BBA\u6280\u3000\n\u30B9\u30DA\u30FC\u30B9\uFF1A\u30B8\u30E3\u30F3\u30D7"
 --- !u!222 &1751074567
 CanvasRenderer:
   m_ObjectHideFlags: 0

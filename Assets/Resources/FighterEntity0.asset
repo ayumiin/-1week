@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FighterEntity0
   m_EditorClassIdentifier: 
   hp: 6
-  Attack: 1.2
+  Attack: 9
   Defence: 1.2
   MoveJump: 6
   MoveSpeed: 5

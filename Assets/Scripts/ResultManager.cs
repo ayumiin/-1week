@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class ResultManager : MonoBehaviour
@@ -34,14 +35,18 @@ public class ResultManager : MonoBehaviour
         {
             resultText.text = "èüóò";
             animator.SetTrigger("WIN");
-            prefabObj.transform.Rotate(new Vector3(0, 180, 0));
+            prefabObj.transform.Rotate(new Vector3(0, 170, 0));
         }
         else
         {
             resultText.text = "îsñk";
             animator.SetTrigger("LOSE");
-            prefabObj.transform.Rotate(new Vector3(0, 130, 0));
+            prefabObj.transform.Rotate(new Vector3(0, 90, 0));
         }
 
+    }
+    public void Retry()
+    {
+        SceneManager.LoadScene("CharaSelect");
     }
 }
